@@ -40,6 +40,7 @@ h6 {
        color: #484848;
        background: none;
        font-weight: bold;     
+		line-height:100%;
 }
 
 h1 {
@@ -144,7 +145,7 @@ nav li {
 {
     color: #fff;
 	font-weight: bold;
-	background: url(bulge.png);
+	background: url(kaltura-images/content-menu-hover.png);
 	background-repeat:no-repeat;
 	background-position:center bottom;
 	padding-bottom:20px;
@@ -163,9 +164,51 @@ nav li {
 }
 
 .grid_1 p,
-.grid_2 p
+.grid_2 p,
+.grid_3 p
 {
 margin-right:15px;
+}
+
+/* Content Sidebar */
+
+#kaltura-sidebar {
+    display: block;
+    float: right;
+    width: 286px;
+    /* These styles will make the sidebar merge with the content-menu
+	top:-90px;
+	margin-bottom:-90px;
+	padding:10px;
+	position:relative;
+	background-color: #BCDBE2;
+	border:0px;
+	
+	This style is handy for testing
+	border: 1px solid red; 
+	*/
+	margin-left:20px;
+}
+#kaltura-sidebar{
+	padding-top: 24px;
+	font-size:.86em;
+}
+.kaltura-sidebar-menu {
+	text-align:left;
+	margin-left:64px;
+}
+.kaltura-sidebar-menu span {
+	font-weight: bold;
+	font-size: 1em;
+}
+.kaltura-sidebar-menu ul {
+	list-style: none;
+}
+.kaltura-sidebar-menu nav {
+	float: right;
+}
+.kaltura-sidebar-menu li {
+	float: none;
 }
 
 /* Kaltura Footer */
@@ -197,14 +240,43 @@ margin-right:15px;
 	float:left;
 	width: 286px;
 }
+#kaltura-footer-lists {
+	padding-top: 24px;
+}
+.kaltura-footer-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 24px;
+}
+.kaltura-footer-list li {
+	float: none;
+	margin: 0 0;
+}
+.kaltura-footer-list span {
+	color:white;
+	font-weight: bold;
+	font-size: 1em;
+}
+.kaltura-footer-list {
+display:inline;
+	float: left;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	width:137px;
+}
+
 #kaltura-footer-logo
 {
 	display:inline;
 	float:left;
 	width:160px;
+	padding-top: 24px;
 }
 #kaltura-copyright
 {
+	padding-top: 24px;
 	display:inline;
 	float:left;
 	width:800px;
