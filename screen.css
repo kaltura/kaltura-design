@@ -1,0 +1,223 @@
+/* Framework */
+html {
+       font-family: Arial, sans-serif;
+       color: #666560;
+       font-size: 12pt;
+       line-height: 18pt;
+}
+body {
+       font-family: Arial, sans-serif;
+       font-size: 100%;
+       line-height: 150%;
+		margin:0;
+		padding:0;
+}
+
+/* Links */
+a {
+       text-decoration: none;
+       color: #00cdff;
+       background: none;
+}
+a:visited {
+      color: #0fa2bb;
+}
+a:active {
+      color: #0fa2bb;
+}
+a:hover, a:focus {
+       text-decoration: underline;
+      color: #0b0080;
+}
+
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+       color: #484848;
+       background: none;
+       font-weight: bold;     
+}
+
+h1 {
+       font-size: 300%;
+}
+h2 {
+       font-size: 200%;
+}
+h3 {
+       font-size: 132%;
+       color: #828a8c;
+}
+h4 {
+       font-size: 116%;
+       color: #828a8c;
+}
+h5 {
+       font-size: 100%;
+       color: #828a8c;
+}
+h6 {
+       font-size: 80%;
+       color: #828a8c;
+}
+p {
+       margin: .4em 0 .5em 0;
+       line-height: 1.5em;
+}
+
+/* Kaltura Masthead */
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	float: left;
+	margin: 0 0.15em;
+}
+#kaltura-masthead {
+	height:108px;
+}
+#kaltura-logo {
+	position:relative;
+	top:30px;
+	left:0;
+}
+#kaltura-top-menu {
+	position: relative;
+	float: right;
+	top:-44px;
+	right:0;
+}
+#kaltura-top-menu a
+{
+	font-weight: bold;	
+}
+#kaltura-top-menu li
+{
+	margin-left: 1em;	
+}
+#kaltura-masthead-menu {
+	position: relative;
+	float: right;
+	top:-20px;
+	right:0;
+}
+#kaltura-masthead-menu a
+{
+	font-weight: bold;	
+	font-size: 1.17em;
+       color: #666560;
+}
+#kaltura-masthead-menu li
+{
+	margin-right: 1em;	
+}
+
+/* Application specific menu */
+
+#kaltura-content-menu-header
+{
+	background-color: #21879d;
+	margin-bottom: 90px;
+}
+#kaltura-content-menu {
+	height:54px;
+	font-size: 1.17em;
+	text-shadow: rgba(0, 0, 0, .59) -1px -2px 3px;
+    color: #9ed7e0;
+}
+#kaltura-content-menu a
+{
+	font-size: 1.17em;
+    color: #9ed7e0;
+}
+#kaltura-content-menu a:hover
+{
+    color: #fff;
+}
+#kaltura-content-menu a.selected
+{
+    color: #fff;
+	font-weight: bold;
+	background: url(bulge.png);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	padding-bottom:20px;
+}
+#kaltura-content-menu li
+{
+	position:relative;
+	top:16px;
+	margin-right: 1em;	
+}
+
+/* Hacks to make the content area look better */
+.kaltura-first-title
+{
+	margin-top:0px;
+}
+
+.grid_1 p,
+.grid_2 p
+{
+margin-right:15px;
+}
+
+/* Kaltura Footer */
+
+#kaltura-footer-banner
+{
+	height:90px;
+	background-color: #21879d;
+	margin-top: 72px;
+}
+#kaltura-footer
+{
+	background-color: #21879d;
+	margin-top: 90px;
+	padding-bottom:64px;
+}
+#kaltura-footer-remarks
+{
+	width: 674px;
+	font-size: 1em;
+	color:#fff;
+	padding-top: 24px;
+	display:inline;
+	float:left;
+}
+#kaltura-footer-social
+{
+	display:inline;
+	float:left;
+	width: 286px;
+}
+#kaltura-footer-logo
+{
+	display:inline;
+	float:left;
+	width:160px;
+}
+#kaltura-copyright
+{
+	display:inline;
+	float:left;
+	width:800px;
+	color:#333;
+	font-size: .8em;
+}
+#kaltura-copyright a
+{
+	text-decoration: underline;
+	color:#333;
+}
+#kaltura-copyright a:hover
+{
+	text-decoration: underline;
+	color:#333;
+}
