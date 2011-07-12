@@ -132,76 +132,32 @@ class Html5VideoTemplate extends BaseTemplate {
 		// Output HTML Page
 		$this->html( 'headelement' );
 ?>
-		<div id="mw-page-base" class="noprint"></div>
-		<div id="mw-head-base" class="noprint"></div>
-		<!-- content -->
-		<div id="content"<?php $this->html( 'specialpageattributes' ) ?>>
-			<a id="top"></a>
-			<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>
-			<?php if ( $this->data['sitenotice'] ): ?>
-			<!-- sitenotice -->
-			<div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div>
-			<!-- /sitenotice -->
-			<?php endif; ?>
-			<!-- firstHeading -->
-			<h1 id="firstHeading" class="firstHeading"><?php $this->html( 'title' ) ?></h1>
-			<!-- /firstHeading -->
-			<!-- bodyContent -->
-			<div id="bodyContent">
-				<?php if ( $this->data['isarticle'] ): ?>
-				<!-- tagline -->
-				<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
-				<!-- /tagline -->
-				<?php endif; ?>
-				<!-- subtitle -->
-				<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
-				<!-- /subtitle -->
-				<?php if ( $this->data['undelete'] ): ?>
-				<!-- undelete -->
-				<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
-				<!-- /undelete -->
-				<?php endif; ?>
-				<?php if( $this->data['newtalk'] ): ?>
-				<!-- newtalk -->
-				<div class="usermessage"><?php $this->html( 'newtalk' )  ?></div>
-				<!-- /newtalk -->
-				<?php endif; ?>
-				<?php if ( $this->data['showjumplinks'] ): ?>
-				<!-- jumpto -->
-				<div id="jump-to-nav">
-					<?php $this->msg( 'jumpto' ) ?> <a href="#mw-head"><?php $this->msg( 'jumptonavigation' ) ?></a>,
-					<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
-				</div>
-				<!-- /jumpto -->
-				<?php endif; ?>
-				<!-- bodytext -->
-				<?php $this->html( 'bodytext' ) ?>
-				<!-- /bodytext -->
-				<?php if ( $this->data['printfooter'] ): ?>
-				<!-- printfooter -->
-				<div class="printfooter">
-				<?php $this->html( 'printfooter' ); ?>
-				</div>
-				<!-- /printfooter -->
-				<?php endif; ?>
-				<?php if ( $this->data['catlinks'] ): ?>
-				<!-- catlinks -->
-				<?php $this->html( 'catlinks' ); ?>
-				<!-- /catlinks -->
-				<?php endif; ?>
-				<?php if ( $this->data['dataAfterContent'] ): ?>
-				<!-- dataAfterContent -->
-				<?php $this->html( 'dataAfterContent' ); ?>
-				<!-- /dataAfterContent -->
-				<?php endif; ?>
-				<div class="visualClear"></div>
-				<!-- debughtml -->
-				<?php $this->html( 'debughtml' ); ?>
-				<!-- /debughtml -->
-			</div>
-			<!-- /bodyContent -->
-		</div>
-		<!-- /content -->
+<header id="kaltura-masthead" class="container_3">
+	<div id="kaltura-logo">
+		<img src="kaltura-images/html5video-logo.png" height="64" width="283">
+	</div>
+	<nav id="kaltura-top-menu">
+		<ul>
+			<li><a href="#">kaltura.com</a></li>
+			<li>|</li>
+			<li><a href="#">kaltura.org</a></li>
+		</ul>
+	</nav>
+	<div class="clear">&nbsp;</div>
+	<nav id="kaltura-masthead-menu">
+		<ul>
+			<li><a href="#">Embed Wizard</a></li>
+			<li><a href="#">Wiki</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Forums</a></li>
+			<li><a href="#">Issues</a></li>
+			<li><a href="#">Code</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="clear">&nbsp;</div>
+<header id="kaltura-content-menu-header" width="100%">
+	<nav id="kaltura-content-menu" class="container_3">
 		<!-- header -->
 		<div id="mw-head" class="noprint">
 			<?php $this->renderNavigation( 'PERSONAL' ); ?>
@@ -213,39 +169,212 @@ class Html5VideoTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<!-- /header -->
-		<!-- panel -->
-			<div id="mw-panel" class="noprint">
-				<!-- logo -->
-					<div id="p-logo"><a style="background-image: url(<?php $this->text( 'logopath' ) ?>);" href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) ) ?>></a></div>
-				<!-- /logo -->
-				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+	</nav>
+</header>
+<div class="clear">&nbsp;</div>
+<content id="kaltura-content" class="container_3">
+<!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
+<div class="container_3">
+	<aside id="kaltura-sidebar">
+		<nav class="kaltura-sidebar-menu">
+			<!-- panel -->
+				<div id="mw-panel" class="noprint">
+					<!-- logo -->
+						<div id="p-logo"><a style="background-image: url(<?php $this->text( 'logopath' ) ?>);" href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) ) ?>></a></div>
+					<!-- /logo -->
+					<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+				</div>
+			<!-- /panel -->
+		</nav>
+	</aside>
+	<!-- content -->
+	<div id="content"<?php $this->html( 'specialpageattributes' ) ?>>
+		<a id="top"></a>
+		<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>
+		<?php if ( $this->data['sitenotice'] ): ?>
+		<!-- sitenotice -->
+		<div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div>
+		<!-- /sitenotice -->
+		<?php endif; ?>
+		<!-- firstHeading -->
+		<h1 id="firstHeading" class="firstHeading kaltura-first-title"><?php $this->html( 'title' ) ?></h1>
+		<!-- /firstHeading -->
+		<!-- bodyContent -->
+		<div id="bodyContent">
+			<?php if ( $this->data['isarticle'] ): ?>
+			<!-- tagline -->
+			<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
+			<!-- /tagline -->
+			<?php endif; ?>
+			<!-- subtitle -->
+			<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
+			<!-- /subtitle -->
+			<?php if ( $this->data['undelete'] ): ?>
+			<!-- undelete -->
+			<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
+			<!-- /undelete -->
+			<?php endif; ?>
+			<?php if( $this->data['newtalk'] ): ?>
+			<!-- newtalk -->
+			<div class="usermessage"><?php $this->html( 'newtalk' )  ?></div>
+			<!-- /newtalk -->
+			<?php endif; ?>
+			<?php if ( $this->data['showjumplinks'] ): ?>
+			<!-- jumpto -->
+			<div id="jump-to-nav">
+				<?php $this->msg( 'jumpto' ) ?> <a href="#mw-head"><?php $this->msg( 'jumptonavigation' ) ?></a>,
+				<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
 			</div>
-		<!-- /panel -->
-		<!-- footer -->
-		<div id="footer"<?php $this->html( 'userlangattributes' ) ?>>
-			<?php foreach( $this->getFooterLinks() as $category => $links ): ?>
-				<ul id="footer-<?php echo $category ?>">
-					<?php foreach( $links as $link ): ?>
-						<li id="footer-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
-					<?php endforeach; ?>
-				</ul>
-			<?php endforeach; ?>
-			<?php $footericons = $this->getFooterIcons("icononly");
-			if ( count( $footericons ) > 0 ): ?>
-				<ul id="footer-icons" class="noprint">
+			<!-- /jumpto -->
+			<?php endif; ?>
+			<!-- bodytext -->
+			<?php $this->html( 'bodytext' ) ?>
+			<!-- /bodytext -->
+			<?php if ( $this->data['printfooter'] ): ?>
+			<!-- printfooter -->
+			<div class="printfooter">
+			<?php $this->html( 'printfooter' ); ?>
+			</div>
+			<!-- /printfooter -->
+			<?php endif; ?>
+			<?php if ( $this->data['catlinks'] ): ?>
+			<!-- catlinks -->
+			<?php $this->html( 'catlinks' ); ?>
+			<!-- /catlinks -->
+			<?php endif; ?>
+			<?php if ( $this->data['dataAfterContent'] ): ?>
+			<!-- dataAfterContent -->
+			<?php $this->html( 'dataAfterContent' ); ?>
+			<!-- /dataAfterContent -->
+			<?php endif; ?>
+			<div class="visualClear"></div>
+			<!-- debughtml -->
+			<?php $this->html( 'debughtml' ); ?>
+			<!-- /debughtml -->
+		</div>
+		<!-- /bodyContent -->
+	</div>
+	<!-- /content -->
+</div> <!-- END Content Div Hack -->
+</content>
+<div class="clear">&nbsp;</div>
+<footer id="kaltura-footer-banner" class="container_3">
+	<!-- footer -->
+	<div id="footer"<?php $this->html( 'userlangattributes' ) ?>>
+		<?php foreach( $this->getFooterLinks() as $category => $links ): ?>
+			<ul id="footer-<?php echo $category ?>">
+				<?php foreach( $links as $link ): ?>
+					<li id="footer-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
+				<?php endforeach; ?>
+			</ul>
+		<?php endforeach; ?>
+		<?php $footericons = $this->getFooterIcons("icononly");
+		if ( count( $footericons ) > 0 ): ?>
+			<ul id="footer-icons" class="noprint">
 <?php			foreach ( $footericons as $blockName => $footerIcons ): ?>
-					<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
+				<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
 <?php				foreach ( $footerIcons as $icon ): ?>
-						<?php echo $this->skin->makeFooterIcon( $icon ); ?>
+					<?php echo $this->skin->makeFooterIcon( $icon ); ?>
 
 <?php				endforeach; ?>
-					</li>
+				</li>
 <?php			endforeach; ?>
-				</ul>
-			<?php endif; ?>
-			<div style="clear:both"></div>
+			</ul>
+		<?php endif; ?>
+		<div style="clear:both"></div>
+	</div>
+	<!-- /footer -->
+</footer>
+<div class="clear">&nbsp;</div>
+<footer id="kaltura-footer">
+	<div class="container_3">
+		<div id="kaltura-footer-remarks">
+			<p>Kaltura is the world's first Open Source Online Video Platform, providing both enterprise level commercial software and services for video publishing, management, syndication and monitization, fully supported and maintained by Kaltura, as well as free open-source community supported solutions.</p>
 		</div>
-		<!-- /footer -->
+		<div id="kaltura-footer-social"><h4>Social Bookmarks and Search</div>
+		<div class="clear">&nbsp;</div>
+		<div id="kaltura-footer-lists">
+			<nav class="kaltura-footer-list ">
+				<span>Products</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+			<nav class="kaltura-footer-list">
+				<span>Solutions</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+			<nav class="kaltura-footer-list">
+				<span>Pricing</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+			<nav class="kaltura-footer-list">
+				<span>Why Kaltura?</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+			<nav class="kaltura-footer-list">
+				<span>Partners</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+			<nav class="kaltura-footer-list">
+				<span>Customers</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+			<nav class="kaltura-footer-list">
+				<span>Community</span>
+				<ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="clear">&nbsp;</div>
+		<div id="kaltura-footer-logo">
+			<img src="kaltura-images/kaltura-logo-160.png" width="160" height="113">
+		</div>
+		<div id="kaltura-copyright">
+			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+</footer>
 		<!-- fixalpha -->
 		<script type="<?php $this->text( 'jsmimetype' ) ?>"> if ( window.isMSIE55 ) fixalpha(); </script>
 		<!-- /fixalpha -->
