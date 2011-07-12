@@ -17,93 +17,36 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 1em;
 }
 body {
-	background-color: #f3f3f3;
+	background-color: #fff;
 	/* @embed */
-	background-image: url(images/page-base.png);
 }
 /* Content */
 div#content {
-	margin-left: 10em;
 	padding: 1em;
 	/* @embed */
-	background-image: url(images/border.png);
-	background-position: top left;
-	background-repeat: repeat-y;
 	background-color: white;
-	color: black;
 	direction: ltr;
 }
 /* Head */
-#mw-page-base {
-	height: 5em;
-	background-color: white;
-	/* @embed */
-	background-image: url(images/page-fade.png);
-	background-position: bottom left;
-	background-repeat: repeat-x;
-}
-#mw-head-base {
-	margin-top: -5em;
-	margin-left: 10em;
-	height: 5em;
-	/* @embed */
-	background-image: url(images/border.png);
-	background-position: bottom left;
-	background-repeat: repeat-x;
-}
-div#mw-head {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-}
-div#mw-head h5 {
-	margin: 0;
-	padding: 0;
-}
 	/* Hide empty portlets */
 	div.emptyPortlet {
 		display: none;
 	}
 	/* Personal */
-	#p-personal {
-		position: absolute;
-		top: 0;
-		right: 0.75em;
-	}
 	#p-personal h5 {
 		display: none;
 	}
 	#p-personal ul {
 		list-style: none;
 		margin: 0;
-		padding-left: 10em; /* Keep from overlapping logo */
-	}
-	/* @noflip */
-	#p-personal li {
-		line-height: 1.125em;
-		float: left;
-	}
-	/* This one flips! */
-	#p-personal li {
-		margin-left: 0.75em;
-		margin-top: 0.5em;
-		font-size: 0.75em;
-		white-space: nowrap;
 	}
 	/* Navigation Containers */
-	#left-navigation {
-		position: absolute;
-		left: 10em;
-		top: 2.5em;
-	}
 	#right-navigation {
 		float: right;
-		margin-top: 2.5em;
 	}
 	/* Navigation Labels */
 	div.vectorTabs h5,
@@ -118,9 +61,11 @@ div#mw-head h5 {
 	}
 	div.vectorTabs {
 		/* @embed */
+		/* TODO: make dividers between tabs
 		background-image: url(images/tab-break.png);
 		background-position: bottom left;
 		background-repeat: no-repeat;
+		 */
 		padding-left: 1px;
 	}
 	/* @noflip */
@@ -144,12 +89,7 @@ div#mw-head h5 {
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		background-color: #f3f3f3;
 		/* @embed */
-		background-image: url(images/tab-normal-fade.png);
-		background-position: bottom left;
-		background-repeat: repeat-x;
-		white-space:nowrap;
 	}
 	/* IGNORED BY IE6 */
 	div.vectorTabs ul > li {
@@ -157,7 +97,6 @@ div#mw-head h5 {
 	}
 	div.vectorTabs li.selected {
 		/* @embed */
-		background-image: url(images/tab-current-fade.png);
 	}
 	/* OVERRIDDEN BY COMPLIANT BROWSERS */
 	div.vectorTabs li a {
@@ -180,7 +119,6 @@ div#mw-head h5 {
 	/* OVERRIDDEN BY COMPLIANT BROWSERS */
 	div.vectorTabs span a  {
 		display: inline-block;
-		padding-top: 1.25em;
 	}
 	/* IGNORED BY IE6 */
 	/* @noflip */
@@ -191,9 +129,6 @@ div#mw-head h5 {
 	div.vectorTabs span {
 		display: inline-block;
 		/* @embed */
-		background-image: url(images/tab-break.png);
-		background-position: bottom right;
-		background-repeat: no-repeat;
 	}
 	div.vectorTabs li.selected a,
 	div.vectorTabs li.selected a:visited{
@@ -227,12 +162,9 @@ div#mw-head h5 {
 	div#mw-head div.vectorMenu h5 {
 		float: left;
 		/* @embed */
-		background-image: url(images/tab-break.png);
-		background-repeat: no-repeat;
 	}
 	/* This will be flipped - unlike the one above it */
 	div#mw-head div.vectorMenu h5 {
-		background-position: bottom left;
 		margin-left: -1px;
 	}
 	/* IGNORED BY IE6 */
@@ -256,12 +188,9 @@ div#mw-head h5 {
 		height: 2.5em;
 		text-decoration: none;
 		/* @embed */
-		background-image: url(images/tab-break.png);
-		background-repeat: no-repeat;
 	}
 	/* This will be flipped - unlike the one above it */
 	div.vectorMenu h5 a {
-		background-position: bottom right;
 	}
 	/* IGNORED BY IE6 */
 	div.vectorMenu h5 > a {
@@ -296,14 +225,14 @@ div#mw-head h5 {
 	}
 	div.vectorMenu ul {
 		position: absolute;
-		background-color: white;
-		border: solid 1px silver;
+		background-color: #21879d;
 		border-top-width: 0;
 		list-style: none;
 		list-style-image: none;
 		list-style-type: none;
-		padding: 0;
+		padding: 1em;
 		margin: 0;
+		top:-25px;
 		margin-left: -1px;
 		text-align: left;
 	}
@@ -357,7 +286,7 @@ div#mw-head h5 {
 	#p-search form,
 	#p-search input {
 		margin: 0;
-		margin-top: 0.4em;
+		margin-top: 0.5em;
 	}
 	div#simpleSearch {
 		display: block;
@@ -443,34 +372,18 @@ div#mw-head h5 {
 	}
 /* Panel */
 div#mw-panel {
-	position: absolute;
-	top: 160px;
-	padding-top: 1em;
-	width: 10em;
-	left: 0;
 }
 	div#mw-panel div.portal {
 		padding-bottom: 1.5em;
 		direction: ltr;
 	}
 	div#mw-panel div.portal h5 {
-		font-weight: normal;
-		color: #444444;
-		padding: 0.25em;
-		padding-top: 0;
-		padding-left: 1.75em;
 		cursor: default;
 		border: none;
-		font-size: 0.75em;
 	}
 	div#mw-panel div.portal div.body {
 		margin: 0;
-		padding-top: 0.5em;
-		margin-left: 1.25em;
 		/* @embed */
-		background-image: url(images/portal-break.png);
-		background-repeat: no-repeat;
-		background-position: top left;
 	}
 	div#mw-panel div.portal div.body ul {
 		list-style: none;
@@ -480,28 +393,12 @@ div#mw-panel {
 		margin: 0;
 	}
 	div#mw-panel div.portal div.body ul li {
-		line-height: 1.125em;
-		padding: 0;
-		padding-bottom: 0.5em;
-		margin: 0;
 		overflow: hidden;
-		font-size: 0.75em;
-	}
-	div#mw-panel div.portal div.body ul li a {
-		color: #0645ad;
-	}
-	div#mw-panel div.portal div.body ul li a:visited {
-		color: #0b0080;
 	}
 /* Footer */
 div#footer {
-	margin-left: 10em;
-	margin-top: 0;
-	padding: 0.75em;
+	margin: .8em;
 	/* @embed */
-	background-image: url(images/border.png);
-	background-position: top left;
-	background-repeat: repeat-x;
 	direction: ltr;
 }
 div#footer ul {
@@ -517,7 +414,7 @@ div#footer ul li {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	color: #333333;
-	font-size: 0.7em;
+	font-size: 1em;
 }
 div#footer #footer-icons {
 	float: right;
@@ -1162,14 +1059,12 @@ div#content .printfooter {
 	font-size: 95%;
 }
 #bodyContent {
-	position: relative;
 	width: 100%;
 }
 #mw-js-message {
 	font-size: 0.8em;
 }
 div#bodyContent {
-	line-height: 1.5em;
 }
 
 /* Watch/Unwatch Icon Styling */
@@ -1216,9 +1111,6 @@ div#bodyContent {
 }
 div.vectorTabs ul {
 	/* @embed */
-	background-image:url(images/tab-break.png);
-	background-position:right bottom;
-	background-repeat:no-repeat;
 }
 
 /* Tooltips are outside of the normal body code, so this helps make the size of the text sensible */

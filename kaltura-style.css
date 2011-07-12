@@ -141,14 +141,10 @@ nav li {
 {
     color: #fff;
 }
-#kaltura-content-menu a.selected
+#kaltura-content-menu li.selected a
 {
     color: #fff;
 	font-weight: bold;
-	background: url(kaltura-images/content-menu-hover.png);
-	background-repeat:no-repeat;
-	background-position:center bottom;
-	padding-bottom:20px;
 }
 #kaltura-content-menu li
 {
@@ -176,6 +172,7 @@ margin-right:15px;
     display: block;
     float: right;
     width: 286px;
+	margin-bottom: 1.5em;
     /* These styles will make the sidebar merge with the content-menu
 	top:-90px;
 	margin-bottom:-90px;
