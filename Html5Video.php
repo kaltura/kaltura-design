@@ -134,7 +134,7 @@ class Html5VideoTemplate extends BaseTemplate {
 ?>
 <header id="kaltura-masthead" class="container_3">
 	<div id="kaltura-logo">
-		<img src="../skins/html5video/kaltura-images/html5video-logo.png" height="64" width="283">
+		<img src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/html5video-logo.png" height="64" width="283">
 	</div>
 	<nav id="kaltura-top-menu">
 		<ul>
@@ -367,7 +367,7 @@ class Html5VideoTemplate extends BaseTemplate {
 		</div>
 		<div class="clear">&nbsp;</div>
 		<div id="kaltura-footer-logo">
-			<img src="../skins/html5video/kaltura-images/kaltura-logo-160.png" width="160" height="113">
+		<img src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-logo-160.png" width="160" height="113">
 		</div>
 		<div id="kaltura-copyright">
 			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
