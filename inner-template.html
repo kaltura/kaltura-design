@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="grid.css" />
-<link rel="stylesheet" href="screen.css" />
+<link rel="stylesheet" href="kaltura-style.css" />
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -14,9 +14,9 @@
 	</div>
 	<nav id="kaltura-top-menu">
 		<ul>
-			<li><a href="#">kaltura.com</a></li>
+			<li><a href="#" class="alwaysunvisited">kaltura.com</a></li>
 			<li>|</li>
-			<li><a href="#">kaltura.org</a></li>
+			<li><a href="#" class="alwaysunvisited">kaltura.org</a></li>
 		</ul>
 	</nav>
 	<div class="clear">&nbsp;</div>
@@ -53,7 +53,7 @@
 <content id="kaltura-content" class="container_3">
 <!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
 <div class="container_3">
-	<aside id="kaltura-sidebar">
+	<aside id="kaltura-sidebar" class="kaltura-box">
 		<nav class="kaltura-sidebar-menu">
 			<span>Application Menu</span>
 			<ul>
@@ -67,7 +67,12 @@
 		<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
 	</aside>
 	<h1 class="kaltura-first-title">This is an H1 with Example Links</h1>
-	<p>Lorem ipsum dolor sit amet, <span style="color:#00cdff;">an unvisited link</span>. Morbi accumsan tristique erat eu volutpat. Sed neque nunc, interdum condimentum fermentum sit amet, <span style="color:#0fa2bb;">a visited link</span> hendrerit a nulla. Nullam sit amet nunc massa, <span style="color:#0b0080;text-decoration:underline;">a hovered link</span> id pellentesque <span style="color:#0b0080;text-decoration:underline;">an active link</span> justo. Aliquam erat volutpat. <span style="color:#0b0080;text-decoration:underline;">A focused link</span> nunc ultricies urna et magna commodo lacinia. Nunc interdum rutrum nisl ut ultricies. Aenean at mi vitae ligula sodales varius et quis nunc. Maecenas sollicitudin rutrum risus vel vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ultrices viverra aliquam. <a href="#">A</a> <a href="#">few</a> <a href="#">real links</a> <a href="#">here for example</a> cras ac enim erat. Donec ac purus in odio sollicitudin lobortis aliquam a ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dictum ligula, vel bibendum ante scelerisque sit amet. Duis cursus volutpat velit, nec tincidunt est interdum eget. Nam euismod cursus dui in rutrum. Ut odio ligula, dignissim vitae commodo sed, luctus vel odio. Sed ut lectus id lacus pharetra vehicula vitae nec nibh.</p>
+	<p>Lorem ipsum dolor sit amet, 
+		<span style="color:#0fa2bb;">an unvisited link</span>. Morbi accumsan tristique erat eu volutpat. Sed neque nunc, interdum condimentum fermentum sit amet, 
+		<span style="color:#0b0080;">a visited link</span> hendrerit a nulla. Nullam sit amet nunc massa, 
+		<span style="color:#00cdff;text-decoration:underline;">a hovered link</span> id pellentesque 
+		<span style="color:#00cdff;text-decoration:underline;">an active link</span> justo. Aliquam erat volutpat. 
+		<span style="color:#00cdff;text-decoration:underline;">A focused link</span> nunc ultricies urna et magna commodo lacinia. Nunc interdum rutrum nisl ut ultricies. Aenean at mi vitae ligula sodales varius et quis nunc. Maecenas sollicitudin rutrum risus vel vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ultrices viverra aliquam. <a href="#">A</a> <a href="#">few</a> <a href="#">real links</a> <a href="#">here for example</a> cras ac enim erat. Donec ac purus in odio sollicitudin lobortis aliquam a ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dictum ligula, vel bibendum ante scelerisque sit amet. Duis cursus volutpat velit, nec tincidunt est interdum eget. Nam euismod cursus dui in rutrum. Ut odio ligula, dignissim vitae commodo sed, luctus vel odio. Sed ut lectus id lacus pharetra vehicula vitae nec nibh.</p>
 		<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
 	<h2>Check out this H2</h2>
 	<div class="clear">&nbsp;</div>
@@ -86,10 +91,18 @@
 	<h6>This is an H6</h6>
 
 	<h1>Here is a Form</h1>
-	<form action="#" method="post">
+	<form action="#" method="post" class="kaltura-box grid_2">
 		<div>
 			 <label for="name">Text Input:</label>
 			 <input type="text" name="name" id="name" value="" tabindex="1" />
+		</div>
+		<div>
+			<div class="clear"></div>
+			<span>
+				<input type="text" name="search" id="name" class="kaltura-search" value="Search Input" tabindex="1" />
+				<input type="button" value="&nbsp;" class="kaltura-search" />
+			</span>
+			<div class="clear"></div>
 		</div>
 
 		<div>
@@ -122,9 +135,11 @@
 		</div>
 
 		<div>
+			<input type="button" value="Button" />
 			<input type="submit" value="Submit" />
 		</div>
 	</form>
+	<div class="clear"></div>
 
 	<h1>Grid Columns</h1>
 	<div class="grid_1">
@@ -138,7 +153,8 @@ margin-right:15px;
 		<p>We should decide how many columns we want in our grid and what margins we would like to have.  A 12 column layout would allow us to use two and three column layouts with ease.</p>
 	</div>
 	<div class="grid_1">
-	<p>Lorem ipsum dolor sit amet, <span style="color:#00cdff;">an unvisited link</span>. Morbi accumsan tristique erat eu volutpat. Sed neque nunc, interdum condimentum fermentum sit amet, <span style="color:#0fa2bb;">a visited link</span> hendrerit a nulla. Nullam sit amet nunc massa, <span style="color:#0b0080;text-decoration:underline;">a hovered link</span> id pellentesque <span style="color:#0b0080;text-decoration:underline;">an active link</span> justo. Aliquam erat volutpat. <span style="color:#0b0080;text-decoration:underline;">A focused link</span> nunc ultricies urna et magna commodo lacinia. Nunc interdum rutrum nisl ut ultricies. Aenean at mi vitae ligula sodales varius et quis nunc. Maecenas sollicitudin rutrum risus vel vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ultrices viverra aliquam. <a href="#">A</a> <a href="#">few</a> <a href="#">real links</a> <a href="#">here for example</a> cras ac enim erat. Donec ac purus in odio sollicitudin lobortis aliquam a ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dictum ligula, vel bibendum ante scelerisque sit amet. Duis cursus volutpat velit, nec tincidunt est interdum eget. Nam euismod cursus dui in rutrum. Ut odio ligula, dignissim vitae commodo sed, luctus vel odio. Sed ut lectus id lacus pharetra vehicula vitae nec nibh.</p>
+		<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
+		<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
 	</div>
 	<div class="grid_1">
 		<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
@@ -157,6 +173,7 @@ margin-right:15px;
 		</div>
 		<div id="kaltura-footer-social"><h4>Social Bookmarks and Search</div>
 		<div class="clear">&nbsp;</div>
+		<hr class="kaltura-footer-rule" />
 		<div id="kaltura-footer-lists">
 			<nav class="kaltura-footer-list ">
 				<span>Products</span>
@@ -230,10 +247,11 @@ margin-right:15px;
 			</nav>
 		</div>
 		<div class="clear">&nbsp;</div>
-		<div id="kaltura-footer-logo">
-			<img src="kaltura-images/kaltura-logo-160.png" width="160" height="113">
-		</div>
-		<div id="kaltura-copyright">
+		<hr class="kaltura-footer-rule" />
+		<div id="kaltura-copyright" class="container_3">
+			<div id="kaltura-footer-logo">
+				<img src="kaltura-images/kaltura-footer-logo.png" width="120" height="65">
+			</div>
 			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
 		</div>
 		<div class="clear">&nbsp;</div>
@@ -246,18 +264,5 @@ margin-right:15px;
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://html5.kaltura.org/js"></script>
 
-<script>
-/*
-mw.ready(function()
-{
-	mw.setConfig('debug', true);
-	mw.setConfig('EmbedPlayer.EnableIframeApi', true);
-	mw.load('EmbedPlayer', function() {
-		$("videoContainer").embedPlayer({ 
-			kentryid: "0_jyyomp04",
-			kwidgetid: "_584771"
-})
-*/
-</script>
 </body>
 </html>

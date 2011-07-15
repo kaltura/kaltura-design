@@ -1,3 +1,24 @@
+/* Kaltura Standard Stylesheet */
+
+/* Kaltura Color Scheme 
+ *
+ * Body Text
+ *	12 pt with 18pt line height (1em and 1.5em)
+ *	#666560 color
+ *	Arial, sans-serif
+ *
+ * Links
+ *	standard: #0fa2bb
+ *	hover focus active: #00cdff
+ *	visited: #0b0080
+ *
+ * Borders: #a7a7a7
+ *
+ * Form Button Text:
+ *	standard: #0fa2bb
+ *	hover: #00cdff
+ */
+
 /* Framework */
 html {
        font-family: Arial, sans-serif;
@@ -16,18 +37,21 @@ body {
 /* Links */
 a {
        text-decoration: none;
-       color: #00cdff;
+       color: #0fa2bb;
        background: none;
 }
 a:visited {
-      color: #0fa2bb;
+      color: #0b0080;
+}
+a.alwaysunvisited:visited {
+	color: #0fa2bb;
 }
 a:active {
-      color: #0fa2bb;
+      color: #00cdff;
 }
 a:hover, a:focus {
        text-decoration: underline;
-      color: #0b0080;
+      color: #00cdff;
 }
 
 /* Fonts */
@@ -68,6 +92,89 @@ h6 {
 p {
        margin: .4em 0 .5em 0;
        line-height: 1.5em;
+}
+
+/* Form Elements */
+
+form input,
+form textarea {
+	background-color: rgba(255,255,255,.85);
+	border: 1px solid #a7a7a7;
+	border-radius: 4px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:.25em;
+}
+form input[type=submit],
+form input[type=button] {
+	color: #0fa2bb;
+	font-weight: bold;
+	margin: .25em;
+	background-image: -webkit-gradient(
+		linear,
+		left 17,
+		left 22,
+		color-stop(0.24, #fefefe),
+		color-stop(0.62, #eaeaea)
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		#eaeaea 8%,
+		white 16%
+	);
+}
+form input[type=submit]:hover,
+form input[type=button]:hover {
+	color: #00cdff;
+	border: 1px solid #00cdff;
+	background-image: none;
+	background-color: #fff;
+}
+
+form input.kaltura-search[type=text] {
+	float: left;
+	display: inline-block;
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+	padding-right: 0;
+}
+form input.kaltura-search[type=button] {
+	color: #0fa2bb;
+	border: 1px solid #a7a7a7;
+	background-image: none;
+	background-color: #fff;
+	float: left;
+	display: inline-block;
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: 0;
+	padding-left: 0;
+	width:30px;
+	color:green;
+	background-image: url(kaltura-images/search-icon.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+form input.kaltura-search[type=button]:hover,
+form input.kaltura-search[type=button]:focus
+{
+	border: 1px solid #a7a7a7;
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	color: #0fa2bb;
+ 	background-image:none;
+}
+
+/* Kaltura Box Highlight */
+.kaltura-box {
+	border: 1px solid #a7a7a7;
+	border-radius: 3px;
+	padding: .75em;
+	margin: .75em;
 }
 
 /* Kaltura Masthead */
@@ -186,8 +293,8 @@ margin-right:15px;
 	
 	This style is handy for testing
 	border: 1px solid red; 
-	*/
 	margin-left:20px;
+	*/
 }
 #kaltura-sidebar{
 	padding-top: 24px;
@@ -195,7 +302,6 @@ margin-right:15px;
 }
 .kaltura-sidebar-menu {
 	text-align:left;
-	margin-left:64px;
 }
 .kaltura-sidebar-menu span {
 	font-weight: bold;
@@ -228,7 +334,7 @@ margin-right:15px;
 #kaltura-footer-remarks
 {
 	width: 674px;
-	font-size: 1em;
+	font-size: .8em;
 	color:#fff;
 	padding-top: 24px;
 	display:inline;
@@ -247,16 +353,29 @@ margin-right:15px;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	padding-top: 24px;
+	padding-top: 0px;
 }
 .kaltura-footer-list li {
 	float: none;
 	margin: 0 0;
+	font-size: .8em;
+	line-height: 1.5em;
+}
+.kaltura-footer-list li a {
+	color:white;
 }
 .kaltura-footer-list span {
 	color:white;
 	font-weight: bold;
 	font-size: 1em;
+}
+.kaltura-footer-rule { 
+    margin: 0 -24px;
+	margin-top: 24px;
+	border:0;
+    height: 1px;
+    background: red;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from( rgba(0,205,255, 0) ), to( rgba(0,205,255, 0) ), color-stop(10%,  rgba(15,162,187, .9) ), color-stop(90%,  rgba(15,162,187, .9) ));
 }
 .kaltura-footer-list {
 display:inline;
@@ -267,29 +386,27 @@ display:inline;
 	width:137px;
 }
 
+#kaltura-copyright
+{
+	padding-top: 24px;
+	display:block;
+	color:#fff;
+	font-size: .7em;
+}
+#kaltura-copyright p
+{
+	margin-right: 1em;
+}
+#kaltura-copyright a,
+#kaltura-copyright a:hover,
+#kaltura-copyright a:visited
+{
+	text-decoration: underline;
+	color:#fff;
+}
 #kaltura-footer-logo
 {
 	display:inline;
 	float:left;
 	width:160px;
-	padding-top: 24px;
-}
-#kaltura-copyright
-{
-	padding-top: 24px;
-	display:inline;
-	float:left;
-	width:800px;
-	color:#333;
-	font-size: .8em;
-}
-#kaltura-copyright a
-{
-	text-decoration: underline;
-	color:#333;
-}
-#kaltura-copyright a:hover
-{
-	text-decoration: underline;
-	color:#333;
 }
