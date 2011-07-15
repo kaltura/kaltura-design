@@ -231,7 +231,8 @@ nav li {
 #kaltura-content-menu-header
 {
 	background-color: #21879d;
-	margin-bottom: 90px;
+	margin-bottom: 32px;
+	height:54px;
 }
 #kaltura-content-menu {
 	height:54px;
@@ -298,15 +299,9 @@ nav li {
 	padding-top: 24px;
 	font-size:.86em;
 }
-#wiki-menu {
-    display: block;
-    float: left;
-    width: 10em;
-	margin-bottom: 1.5em;
-	font-size:.86em;
-}
 .kaltura-sidebar-menu {
 	text-align:left;
+	display:none;
 }
 .kaltura-sidebar-menu span {
 	font-weight: bold;

@@ -44,7 +44,18 @@ div#content {
 		list-style: none;
 		margin: 0;
 	}
+div#mw-head {
+	position: relative;
+	margin-left:10em;
+	display:block;
+}
+div#mw-head h5 {
+	margin: 0;
+	padding: 0;
+}
 	/* Navigation Containers */
+	#left-navigation {
+	}
 	#right-navigation {
 		float: right;
 	}
@@ -61,11 +72,9 @@ div#content {
 	}
 	div.vectorTabs {
 		/* @embed */
-		/* TODO: make dividers between tabs
 		background-image: url(images/tab-break.png);
 		background-position: bottom left;
 		background-repeat: no-repeat;
-		 */
 		padding-left: 1px;
 	}
 	/* @noflip */
@@ -89,7 +98,12 @@ div#content {
 		height: 100%;
 		margin: 0;
 		padding: 0;
+		background-color: #f3f3f3;
 		/* @embed */
+		background-image: url(images/tab-normal-fade.png);
+		background-position: bottom left;
+		background-repeat: repeat-x;
+		white-space:nowrap;
 	}
 	/* IGNORED BY IE6 */
 	div.vectorTabs ul > li {
@@ -97,6 +111,7 @@ div#content {
 	}
 	div.vectorTabs li.selected {
 		/* @embed */
+		background-image: url(images/tab-current-fade.png);
 	}
 	/* OVERRIDDEN BY COMPLIANT BROWSERS */
 	div.vectorTabs li a {
@@ -119,6 +134,7 @@ div#content {
 	/* OVERRIDDEN BY COMPLIANT BROWSERS */
 	div.vectorTabs span a  {
 		display: inline-block;
+		padding-top: 1.25em;
 	}
 	/* IGNORED BY IE6 */
 	/* @noflip */
@@ -129,6 +145,9 @@ div#content {
 	div.vectorTabs span {
 		display: inline-block;
 		/* @embed */
+		background-image: url(images/tab-break.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;
 	}
 	div.vectorTabs li.selected a,
 	div.vectorTabs li.selected a:visited{
@@ -162,9 +181,12 @@ div#content {
 	div#mw-head div.vectorMenu h5 {
 		float: left;
 		/* @embed */
+		background-image: url(images/tab-break.png);
+		background-repeat: no-repeat;
 	}
 	/* This will be flipped - unlike the one above it */
 	div#mw-head div.vectorMenu h5 {
+		background-position: bottom left;
 		margin-left: -1px;
 	}
 	/* IGNORED BY IE6 */
@@ -188,9 +210,12 @@ div#content {
 		height: 2.5em;
 		text-decoration: none;
 		/* @embed */
+		background-image: url(images/tab-break.png);
+		background-repeat: no-repeat;
 	}
 	/* This will be flipped - unlike the one above it */
 	div.vectorMenu h5 a {
+		background-position: bottom right;
 	}
 	/* IGNORED BY IE6 */
 	div.vectorMenu h5 > a {
@@ -225,14 +250,14 @@ div#content {
 	}
 	div.vectorMenu ul {
 		position: absolute;
-		background-color: #21879d;
+		background-color: white;
+		border: solid 1px silver;
 		border-top-width: 0;
 		list-style: none;
 		list-style-image: none;
 		list-style-type: none;
-		padding: 1em;
+		padding: 0;
 		margin: 0;
-		top:-25px;
 		margin-left: -1px;
 		text-align: left;
 	}
@@ -372,18 +397,36 @@ div#content {
 	}
 /* Panel */
 div#mw-panel {
+	position: absolute;
+	top: 194px;
+	padding-top: 1em;
+	width: 10em;
+	left: 0;
+	font-size: .8em;
 }
 	div#mw-panel div.portal {
+		display:block;
 		padding-bottom: 1.5em;
 		direction: ltr;
 	}
 	div#mw-panel div.portal h5 {
+		display:inline;
+		font-weight: normal;
+		color: #444444;
+		padding: 0.25em;
+		padding-top: 0;
+		padding-left: 1.75em;
 		cursor: default;
 		border: none;
 	}
 	div#mw-panel div.portal div.body {
 		margin: 0;
+		padding-top: 0.5em;
+		margin-left: 1.25em;
 		/* @embed */
+		background-image: url(images/portal-break.png);
+		background-repeat: no-repeat;
+		background-position: top left;
 	}
 	div#mw-panel div.portal div.body ul {
 		list-style: none;
@@ -393,7 +436,20 @@ div#mw-panel {
 		margin: 0;
 	}
 	div#mw-panel div.portal div.body ul li {
+		line-height: 1.125em;
+		padding: 0;
+		padding-bottom: 0.5em;
+		margin: 0;
 		overflow: hidden;
+	}
+	div#mw-panel div.portal div.body ul li a {
+		color: #0645ad;
+	}
+	div#mw-panel div.portal div.body ul li a:visited {
+		color: #0b0080;
+	}
+	#p-personal h5 {
+		display: none;
 	}
 /* Footer */
 div#footer {
@@ -580,6 +636,7 @@ div#footer #footer-places li {
  */
 div#content {
 	line-height: 1.5em;
+	margin-left:10em;
 }
 #bodyContent {
 	font-size: 1em;

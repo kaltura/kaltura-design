@@ -156,38 +156,27 @@ class Html5VideoTemplate extends BaseTemplate {
 	</nav>
 </header>
 <div class="clear">&nbsp;</div>
-<header id="kaltura-content-menu-header" width="100%">
-	<nav id="kaltura-content-menu" class="container_3">
-		<!-- header -->
-		<div id="mw-head" class="noprint">
-			<div id="left-navigation">
-				<?php $this->renderNavigation( array( 'NAMESPACES', 'VARIANTS' ) ); ?>
-			</div>
-			<div id="right-navigation">
-				<?php $this->renderNavigation( array( 'VIEWS', 'ACTIONS', 'SEARCH' ) ); ?>
-			</div>
-		</div>
-		<!-- /header -->
-	</nav>
-</header>
+<header id="kaltura-content-menu-header" width="100%">&nbsp;</header>
 <div class="clear">&nbsp;</div>
 <content id="kaltura-content" class="container_3">
 <!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
 <div class="container_3">
-	<aside id="wiki-menu" class="kaltura-box">
-		<nav class="kaltura-sidebar-menu">
-			<!-- panel -->
-				<div id="mw-panel" class="noprint">
-					<!-- logo -->
-						<div id="p-logo"><a style="background-image: url(<?php $this->text( 'logopath' ) ?>);" href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) ) ?>></a></div>
-					<!-- /logo -->
-					<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-				</div>
-			<!-- /panel -->
-			<?php $this->renderNavigation( 'PERSONAL' ); ?>
-		</nav>
-	</aside>
 	<!-- content -->
+	<header width="100%">
+		<nav>
+			<!-- header -->
+			<div id="mw-head" class="noprint">
+				<div id="left-navigation">
+					<?php $this->renderNavigation( array( 'NAMESPACES', 'VARIANTS' ) ); ?>
+				</div>
+				<div id="right-navigation">
+					<?php $this->renderNavigation( array( 'VIEWS', 'ACTIONS', 'SEARCH' ) ); ?>
+				</div>
+			</div>
+			<!-- /header -->
+		</nav>
+	</header>
+	<div class="clear">&nbsp;</div>
 	<div id="content"<?php $this->html( 'specialpageattributes' ) ?>>
 		<a id="top"></a>
 		<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>
@@ -259,6 +248,22 @@ class Html5VideoTemplate extends BaseTemplate {
 </content>
 <div class="clear">&nbsp;</div>
 <footer class="kaltura-box container_3">
+<div id="wiki-menu">
+	<nav>
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+				<div class="portal">
+					<h5>Personal Tools</h5>
+					<div class="body">
+						<?php $this->renderNavigation( 'PERSONAL' ); ?>
+					</div>
+				</div>
+			</div>
+		<!-- /panel -->
+	</nav>
+</div>
+<div class="clear">&nbsp;</div>
 	<!-- footer -->
 	<div id="footer"<?php $this->html( 'userlangattributes' ) ?>>
 		<?php foreach( $this->getFooterLinks() as $category => $links ): ?>
@@ -547,7 +552,6 @@ class Html5VideoTemplate extends BaseTemplate {
 				case 'PERSONAL':
 ?>
 <div id="p-personal" class="<?php if ( count( $this->data['personal_urls'] ) == 0 ) echo ' emptyPortlet'; ?>">
-	<h5><?php $this->msg( 'personaltools' ) ?></h5>
 	<ul<?php $this->html( 'userlangattributes' ) ?>>
 <?php			foreach( $this->getPersonalTools() as $key => $item ) { ?>
 		<?php echo $this->makeListItem( $key, $item ); ?>
