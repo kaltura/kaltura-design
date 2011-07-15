@@ -138,9 +138,9 @@ class Html5VideoTemplate extends BaseTemplate {
 	</div>
 	<nav id="kaltura-top-menu">
 		<ul>
-			<li><a href="#">kaltura.com</a></li>
+			<li><a href="#" class="alwaysunvisited">kaltura.com</a></li>
 			<li>|</li>
-			<li><a href="#">kaltura.org</a></li>
+			<li><a href="#" class="alwaysunvisited">kaltura.org</a></li>
 		</ul>
 	</nav>
 	<div class="clear">&nbsp;</div>
@@ -174,7 +174,7 @@ class Html5VideoTemplate extends BaseTemplate {
 <content id="kaltura-content" class="container_3">
 <!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
 <div class="container_3">
-	<aside id="kaltura-sidebar">
+	<aside id="wiki-menu" class="kaltura-box">
 		<nav class="kaltura-sidebar-menu">
 			<!-- panel -->
 				<div id="mw-panel" class="noprint">
@@ -258,7 +258,7 @@ class Html5VideoTemplate extends BaseTemplate {
 </div> <!-- END Content Div Hack -->
 </content>
 <div class="clear">&nbsp;</div>
-<footer id="kaltura-footer-banner" class="container_3">
+<footer class="kaltura-box container_3">
 	<!-- footer -->
 	<div id="footer"<?php $this->html( 'userlangattributes' ) ?>>
 		<?php foreach( $this->getFooterLinks() as $category => $links ): ?>
@@ -293,6 +293,7 @@ class Html5VideoTemplate extends BaseTemplate {
 		</div>
 		<div id="kaltura-footer-social"><h4>Social Bookmarks and Search</div>
 		<div class="clear">&nbsp;</div>
+		<hr class="kaltura-footer-rule" />
 		<div id="kaltura-footer-lists">
 			<nav class="kaltura-footer-list ">
 				<span>Products</span>
@@ -366,10 +367,11 @@ class Html5VideoTemplate extends BaseTemplate {
 			</nav>
 		</div>
 		<div class="clear">&nbsp;</div>
-		<div id="kaltura-footer-logo">
-		<img src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-logo-160.png" width="160" height="113">
-		</div>
+		<hr class="kaltura-footer-rule" />
 		<div id="kaltura-copyright">
+			<div id="kaltura-footer-logo">
+				<img src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-footer-logo.png" width="120" height="65">
+			</div>
 			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
 		</div>
 		<div class="clear">&nbsp;</div>

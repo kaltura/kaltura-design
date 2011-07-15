@@ -298,6 +298,13 @@ nav li {
 	padding-top: 24px;
 	font-size:.86em;
 }
+#wiki-menu {
+    display: block;
+    float: left;
+    width: 10em;
+	margin-bottom: 1.5em;
+	font-size:.86em;
+}
 .kaltura-sidebar-menu {
 	text-align:left;
 }

@@ -582,7 +582,7 @@ div#content {
 	line-height: 1.5em;
 }
 #bodyContent {
-	font-size: 0.8em;
+	font-size: 1em;
 }
 /* Links */
 a {
@@ -636,13 +636,12 @@ h6 {
 	overflow: hidden;
 	padding-top: .5em;
 	padding-bottom: .17em;
-	border-bottom: 1px solid #aaa;
 	width: auto;
 }
 h1 { font-size: 188%; }
-h1 .editsection { font-size: 53%; }
+h1 .editsection { font-size: 10pt; font-weight: normal; }
 h2 { font-size: 150%; }
-h2 .editsection { font-size: 67%; }
+h2 .editsection { font-size: 10pt; font-weight: normal; }
 h3,
 h4,
 h5,
@@ -651,13 +650,13 @@ h6 {
 	font-weight: bold;
 }
 h3 { font-size: 132%; }
-h3 .editsection { font-size: 76%; font-weight: normal; }
+h3 .editsection { font-size: 10pt; font-weight: normal; }
 h4 { font-size: 116%; }
-h4 .editsection { font-size: 86%; font-weight: normal; }
+h4 .editsection { font-size: 10pt; font-weight: normal; }
 h5 { font-size: 100%; }
 h5 .editsection { font-weight: normal; }
 h6 { font-size: 80%;  }
-h6 .editsection { font-size: 125%; font-weight: normal; }
+h6 .editsection { font-size: 10pt; font-weight: normal; }
 .editsection { float: right; }
 p {
 	margin: .4em 0 .5em 0;
@@ -941,8 +940,6 @@ h3, h4, h5 {
 	margin-top: 0;
 	padding-top: 0;
 	margin-bottom: 0.1em;
-	line-height: 1.2em;
-	font-size: 1.6em;
 	padding-bottom: 0;
 }
 div#content a.external,
@@ -1116,4 +1113,13 @@ div.vectorTabs ul {
 /* Tooltips are outside of the normal body code, so this helps make the size of the text sensible */
 .tipsy {
 	font-size: 0.8em;
+}
+
+/* fix overflow for code view */
+
+div.mw-geshi {
+	overflow-x:auto;
+	overflow-y:hidden;
+	font-size: .8em;
+	line-height: 1em;
 }
