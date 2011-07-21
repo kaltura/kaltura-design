@@ -353,7 +353,14 @@ nav li {
 {
 	display:inline;
 	float:left;
-	width: 286px;
+	width: 262px;
+	padding-top: 24px;
+	padding-left: 24px;
+}
+#kaltura-footer-social span
+{
+	color:white;
+	font-weight: bold;
 }
 #kaltura-footer-lists {
 	padding-top: 24px;
