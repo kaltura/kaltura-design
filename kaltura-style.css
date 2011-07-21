@@ -246,6 +246,7 @@ nav li {
 #kaltura-content-menu a:hover
 {
     color: #fff;
+	text-decoration: none;
 }
 #kaltura-content-menu a.selected
 {
