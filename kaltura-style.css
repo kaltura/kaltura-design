@@ -23,8 +23,8 @@
 html {
        font-family: Arial, sans-serif;
        color: #666560;
-       font-size: 12pt;
-       line-height: 18pt;
+       font-size: 12px;
+       line-height: 1.5em;
 }
 body {
        font-family: Arial, sans-serif;
@@ -68,25 +68,25 @@ h6 {
 }
 
 h1 {
-       font-size: 2.1em;
+       font-size: 3em;
 }
 h2 {
-       font-size: 1.9em;
+       font-size: 2.2em;
 }
 h3 {
-       font-size: 1.6em;
+       font-size: 1.7em;
        color: #828a8c;
 }
 h4 {
-       font-size: 1.2em;
+       font-size: 1.5em;
        color: #828a8c;
 }
 h5 {
-       font-size: 1em;
+       font-size: 1.2em;
        color: #828a8c;
 }
 h6 {
-       font-size: .85em;
+       font-size: 1em;
        color: #828a8c;
 }
 p {
@@ -212,14 +212,14 @@ nav li {
 #kaltura-masthead-menu {
 	position: relative;
 	float: right;
-	top:-20px;
+	top:0;
 	right:0
 }
 #kaltura-masthead-menu a
 {
 	font-weight: bold;	
-	font-size: 1.17em;
-       color: #666560;
+	font-size: 1.33em;
+    color: #666560;
 }
 #kaltura-masthead-menu li
 {
@@ -235,7 +235,7 @@ nav li {
 }
 #kaltura-content-menu {
 	height:54px;
-	font-size: 1.14em;
+	font-size: 1.17em;
 	text-shadow: rgba(0, 0, 0, .59) -1px -2px 2px;
     color: #9ed7e0;
 }
@@ -246,11 +246,24 @@ nav li {
 #kaltura-content-menu a:hover
 {
     color: #fff;
+	text-decoration: none;
 }
 #kaltura-content-menu a.selected
 {
     color: #fff;
 	font-weight: bold;
+	/* no background right now
+	background: url(kaltura-images/content-menu-hover.png);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	padding-bottom:20px;
+	*/
+}
+#kaltura-masthead-menu a.selected
+{
+    color: #21879d;
+	font-weight: bold;
+	text-decoration: underline;
 	/* no background right now
 	background: url(kaltura-images/content-menu-hover.png);
 	background-repeat:no-repeat;
@@ -341,7 +354,14 @@ nav li {
 {
 	display:inline;
 	float:left;
-	width: 286px;
+	width: 262px;
+	padding-top: 24px;
+	padding-left: 24px;
+}
+#kaltura-footer-social span
+{
+	color:white;
+	font-weight: bold;
 }
 #kaltura-footer-lists {
 	padding-top: 24px;
@@ -350,6 +370,7 @@ nav li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-right: 1em;
 	padding-top: 0px;
 }
 .kaltura-footer-list li {
@@ -361,7 +382,7 @@ nav li {
 .kaltura-footer-list li a {
 	color:white;
 }
-.kaltura-footer-list span {
+.kaltura-footer-list span a {
 	color:white;
 	font-weight: bold;
 	font-size: 1em;
