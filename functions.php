@@ -506,3 +506,35 @@ function twentyten_posted_in() {
 	);
 }
 endif;
+
+add_action('init', 'setup_demo_post_type');
+function setup_demo_post_type() 
+{
+    $labels = array(
+        'name' => _x('Demos', 'post type general name'),
+        'singular_name' => _x('Demo', 'post type singular name'),
+        'add_new' => _x('Add New', 'demo'),
+        'add_new_item' => __('Add New Demo'),
+        'edit_item' => __('Edit Demo'),
+        'new_item' => __('New Demo'),
+        'view_item' => __('View Demo'),
+        'search_items' => __('Search Demos'),
+        'not_found' =>  __('No demos found'),
+        'not_found_in_trash' => __('No demos found in Trash'), 
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true, 
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'demo', 'with_front' => false ),
+        'capability_type' => 'post',
+        'hierarchical' => true,
+        'menu_position' => 5,
+        'supports' => array('title','editor','author','comments','trackbacks','revisions','custom-fields', 'page-attributes')
+    ); 
+        register_post_type('demo',$args);
+        register_taxonomy_for_object_type('post_tag', 'demo');
+}
