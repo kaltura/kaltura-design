@@ -431,7 +431,7 @@ span.kaltura-partners {
 	color:white;
 	font-weight: bold;
 	margin-top: 24px;
-	padding-top: 24px;
+	display:block;
 }
 table.kaltura-partners {
 	width: 100%;
