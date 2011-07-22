@@ -452,7 +452,6 @@ div#mw-panel {
 	}
 /* Footer */
 div#footer {
-	margin: .8em;
 	/* @embed */
 	direction: ltr;
 }
@@ -478,12 +477,18 @@ div#footer #footer-icons {
 body.ltr div#footer #footer-places {
 	float: left;
 }
-div#footer #footer-info li {
+div#footer #footer-info span {
 	line-height: 1.4em;
 }
-div#footer #footer-icons li {
+span#footer-info-lastmod {
+	color:white;
+	position:relative;
+	top:24px;
+	margin:0;
+	padding:0;
+}
+div#footer #footer-icons span {
 	float: left;
-	margin-left: 0.5em;
 	line-height: 2em;
 	text-align: right;
 }

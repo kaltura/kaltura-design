@@ -134,24 +134,19 @@ class Html5VideoTemplate extends BaseTemplate {
 ?>
 <header id="kaltura-masthead" class="container_3">
 	<div id="kaltura-logo">
-		<img src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/html5video-logo.png" height="64" width="283">
+		<a href="http://html5video.org/"><img src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/html5video-logo.png" height="64" width="283"></a>
 	</div>
-	<nav id="kaltura-top-menu">
-		<ul>
-			<li><a href="#" class="alwaysunvisited">kaltura.com</a></li>
-			<li>|</li>
-			<li><a href="#" class="alwaysunvisited">kaltura.org</a></li>
-		</ul>
-	</nav>
 	<div class="clear">&nbsp;</div>
 	<nav id="kaltura-masthead-menu">
 		<ul>
+			<!--
 			<li><a href="#">Embed Wizard</a></li>
-			<li><a href="#">Wiki</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Forums</a></li>
-			<li><a href="#">Issues</a></li>
-			<li><a href="#">Code</a></li>
+			-->
+			<li><a class="selected" href="http://html5video.org/wiki/">Wiki</a></li>
+			<li><a href="http://html5video.org/blog/">Blog</a></li>
+			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
+			<li><a href="http://www.kaltura.org/project/issues/2720">Issues</a></li>
+			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
 		</ul>
 	</nav>
 </header>
@@ -247,7 +242,6 @@ class Html5VideoTemplate extends BaseTemplate {
 </div> <!-- END Content Div Hack -->
 </content>
 <div class="clear">&nbsp;</div>
-<footer id="mediawiki-footer" class="kaltura-box container_3">
 <div id="wiki-menu">
 	<nav>
 		<!-- panel -->
@@ -261,116 +255,20 @@ class Html5VideoTemplate extends BaseTemplate {
 				</div>
 			</div>
 			<!-- /panel -->
-			<div class="clear">&nbsp;</div>
 	</nav>
 </div>
-<div class="clear">&nbsp;</div>
-	<!-- footer -->
-	<div id="footer"<?php $this->html( 'userlangattributes' ) ?>>
-		<?php foreach( $this->getFooterLinks() as $category => $links ): ?>
-			<ul id="footer-<?php echo $category ?>">
-				<?php foreach( $links as $link ): ?>
-					<li id="footer-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
-				<?php endforeach; ?>
-			</ul>
-		<?php endforeach; ?>
-		<?php $footericons = $this->getFooterIcons("icononly");
-		if ( count( $footericons ) > 0 ): ?>
-			<ul id="footer-icons" class="noprint">
-<?php			foreach ( $footericons as $blockName => $footerIcons ): ?>
-				<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
-<?php				foreach ( $footerIcons as $icon ): ?>
-					<?php echo $this->skin->makeFooterIcon( $icon ); ?>
-
-<?php				endforeach; ?>
-				</li>
-<?php			endforeach; ?>
-			</ul>
-		<?php endif; ?>
-		<div style="clear:both"></div>
-	</div>
-	<!-- /footer -->
-</footer>
 <div class="clear">&nbsp;</div>
 <footer id="kaltura-footer">
 	<div class="container_3">
 		<div id="kaltura-footer-remarks">
 			<p>Kaltura is the world's first Open Source Online Video Platform, providing both enterprise level commercial software and services for video publishing, management, syndication and monitization, fully supported and maintained by Kaltura, as well as free open-source community supported solutions.</p>
 		</div>
-		<div id="kaltura-footer-social"><h4>Social Bookmarks and Search</div>
-		<div class="clear">&nbsp;</div>
-		<hr class="kaltura-footer-rule" />
-		<div id="kaltura-footer-lists">
-			<nav class="kaltura-footer-list ">
-				<span>Products</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list">
-				<span>Solutions</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list">
-				<span>Pricing</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list">
-				<span>Why Kaltura?</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list">
-				<span>Partners</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list">
-				<span>Customers</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list">
-				<span>Community</span>
-				<ul>
-					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-				</ul>
-			</nav>
+		<div id="kaltura-footer-social">
+			<span>Stay in Touch</span><br />
+			<a href="http://twitter.com/kaltura"><img alt="Twitter" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-icon-twitter.png"></a>
+			<a href="#nowhere"><img alt="????" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-icon-chat.png"></a>
+			<a href="http://www.linkedin.com/company/kaltura"><img alt="LinkedIn" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-icon-linkedin.png"></a>
+			<a href="http://www.facebook.com/groups/kaltura"><img alt="Facebook" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/kaltura-icon-facebook.png"></a>
 		</div>
 		<div class="clear">&nbsp;</div>
 		<hr class="kaltura-footer-rule" />
