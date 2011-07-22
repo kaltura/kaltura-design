@@ -401,7 +401,6 @@ div#mw-panel {
 	top: 194px;
 	padding-top: 1em;
 	width: 10em;
-	left: 0;
 	font-size: .8em;
 }
 	div#mw-panel div.portal {
@@ -988,6 +987,7 @@ table.small {
 /* Edge Cases for Content */
 h1, h2 {
 	margin-bottom: .6em;
+	padding-top: 1.5em;
 }
 h3, h4, h5 {
 	margin-bottom: .3em;

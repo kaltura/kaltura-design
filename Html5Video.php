@@ -247,7 +247,7 @@ class Html5VideoTemplate extends BaseTemplate {
 </div> <!-- END Content Div Hack -->
 </content>
 <div class="clear">&nbsp;</div>
-<footer class="kaltura-box container_3">
+<footer id="mediawiki-footer" class="kaltura-box container_3">
 <div id="wiki-menu">
 	<nav>
 		<!-- panel -->
@@ -260,7 +260,8 @@ class Html5VideoTemplate extends BaseTemplate {
 					</div>
 				</div>
 			</div>
-		<!-- /panel -->
+			<!-- /panel -->
+			<div class="clear">&nbsp;</div>
 	</nav>
 </div>
 <div class="clear">&nbsp;</div>
