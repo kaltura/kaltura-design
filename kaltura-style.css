@@ -236,7 +236,7 @@ nav li {
 #kaltura-content-menu {
 	height:54px;
 	font-size: 1.17em;
-	text-shadow: rgba(0, 0, 0, .59) -1px -2px 2px;
+	text-shadow: rgba(0, 0, 0, .59) -1px -1px 1px;
     color: #9ed7e0;
 }
 #kaltura-content-menu a
