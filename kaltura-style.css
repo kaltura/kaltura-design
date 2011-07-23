@@ -23,7 +23,7 @@
 html {
        font-family: Arial, sans-serif;
        color: #666560;
-       font-size: 12px;
+       font-size: 13px;
        line-height: 1.5em;
 }
 body {
@@ -108,6 +108,7 @@ form textarea {
 form input[type=submit],
 form input[type=button] {
 	color: #0fa2bb;
+	font-size:12px;
 	font-weight: bold;
 	margin: .25em;
 	background-image: -webkit-gradient(
@@ -279,6 +280,9 @@ nav li {
 	margin-right: 1em;	
 }
 
+#kaltura-content > div.container_3  {
+	min-height: 304px;
+}
 /* Hacks to make the content area look better */
 .kaltura-first-title
 {
@@ -452,3 +456,6 @@ table.kaltura-partners a:hover {
 #mediawiki-footer {
 	margin:auto;
 }
+div#mw-panel div.portal div.body ul li {
+		float:none;
+	}

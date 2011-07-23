@@ -72,7 +72,6 @@ div#mw-head h5 {
 	}
 	div.vectorTabs {
 		/* @embed */
-		background-image: url(images/tab-break.png);
 		background-position: bottom left;
 		background-repeat: no-repeat;
 		padding-left: 1px;
@@ -98,11 +97,7 @@ div#mw-head h5 {
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		background-color: #f3f3f3;
 		/* @embed */
-		background-image: url(images/tab-normal-fade.png);
-		background-position: bottom left;
-		background-repeat: repeat-x;
 		white-space:nowrap;
 	}
 	/* IGNORED BY IE6 */
@@ -111,7 +106,6 @@ div#mw-head h5 {
 	}
 	div.vectorTabs li.selected {
 		/* @embed */
-		background-image: url(images/tab-current-fade.png);
 	}
 	/* OVERRIDDEN BY COMPLIANT BROWSERS */
 	div.vectorTabs li a {
@@ -119,17 +113,18 @@ div#mw-head h5 {
 		height: 1.9em;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
-		color: #0645ad;
+		color: #0fa2bb;
 		cursor: pointer;
 		font-size: 0.8em;
+	}
+	div.vectorTabs li a:hover {
+		color:#00cdff;
 	}
 	/* IGNORED BY IE6 */
 	div.vectorTabs li > a {
 		display: block;
 	}
 	div.vectorTabs li.icon a {
-		background-position: bottom right;
-		background-repeat: no-repeat;
 	}
 	/* OVERRIDDEN BY COMPLIANT BROWSERS */
 	div.vectorTabs span a  {
@@ -145,9 +140,6 @@ div#mw-head h5 {
 	div.vectorTabs span {
 		display: inline-block;
 		/* @embed */
-		background-image: url(images/tab-break.png);
-		background-position: bottom right;
-		background-repeat: no-repeat;
 	}
 	div.vectorTabs li.selected a,
 	div.vectorTabs li.selected a:visited{
@@ -181,7 +173,6 @@ div#mw-head h5 {
 	div#mw-head div.vectorMenu h5 {
 		float: left;
 		/* @embed */
-		background-image: url(images/tab-break.png);
 		background-repeat: no-repeat;
 	}
 	/* This will be flipped - unlike the one above it */
@@ -210,7 +201,6 @@ div#mw-head h5 {
 		height: 2.5em;
 		text-decoration: none;
 		/* @embed */
-		background-image: url(images/tab-break.png);
 		background-repeat: no-repeat;
 	}
 	/* This will be flipped - unlike the one above it */
@@ -251,8 +241,6 @@ div#mw-head h5 {
 	div.vectorMenu ul {
 		position: absolute;
 		background-color: white;
-		border: solid 1px silver;
-		border-top-width: 0;
 		list-style: none;
 		list-style-image: none;
 		list-style-type: none;
@@ -283,9 +271,12 @@ div#mw-head h5 {
 		display: inline-block;
 		padding: 0.5em;
 		white-space: nowrap;
-		color: #0645ad;
+		color:#0fa2bb;
 		cursor: pointer;
 		font-size: 0.8em;
+	}
+	div.vectorMenu li a:hover {
+		color:#00cdff;
 	}
 	/* IGNORED BY IE6 */
 	div.vectorMenu li > a {
@@ -402,6 +393,7 @@ div#mw-panel {
 	padding-top: 1em;
 	width: 10em;
 	font-size: .8em;
+	display:inline;
 }
 	div#mw-panel div.portal {
 		display:block;
@@ -409,9 +401,7 @@ div#mw-panel {
 		direction: ltr;
 	}
 	div#mw-panel div.portal h5 {
-		display:inline;
 		font-weight: normal;
-		color: #444444;
 		padding: 0.25em;
 		padding-top: 0;
 		padding-left: 1.75em;
@@ -436,16 +426,15 @@ div#mw-panel {
 	}
 	div#mw-panel div.portal div.body ul li {
 		line-height: 1.125em;
+		float:none;
 		padding: 0;
 		padding-bottom: 0.5em;
 		margin: 0;
 		overflow: hidden;
 	}
 	div#mw-panel div.portal div.body ul li a {
-		color: #0645ad;
 	}
 	div#mw-panel div.portal div.body ul li a:visited {
-		color: #0b0080;
 	}
 	#p-personal h5 {
 		display: none;
@@ -1182,6 +1171,6 @@ div.vectorTabs ul {
 div.mw-geshi {
 	overflow-x:auto;
 	overflow-y:hidden;
-	font-size: .8em;
-	line-height: 1em;
+	font-size: .95em;
+	line-height: 1.05em;
 }
