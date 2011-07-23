@@ -290,6 +290,13 @@ nav li {
 {
 	margin-right:15px;
 }
+hr.widget-rule { 
+	width: 100%;
+	border:0;
+    height: 1px;
+    background: red;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from( rgba(0,205,255, 0) ), to( rgba(0,205,255, 0) ), color-stop(10%,  rgba(15,162,187, .9) ), color-stop(90%,  rgba(15,162,187, .9) ));
+}
 
 /* Content Sidebar */
 

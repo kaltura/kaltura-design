@@ -135,10 +135,10 @@ h3#reply-title,
 .reply,
 .widget-title,
 .wp-caption-text {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 input[type=submit] {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -196,12 +196,12 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-	background: #f1f1f1;
+	background: #fff;
 }
 body,
 input,
 textarea {
-	color: #666;
+	color: #666560;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -216,14 +216,6 @@ hr {
 /* Text elements */
 p {
 	margin-bottom: 18px;
-}
-ul {
-	list-style: square;
-	margin: 0 0 18px 1.5em;
-}
-ol {
-	list-style: decimal;
-	margin: 0 0 18px 1.5em;
 }
 ol ol {
 	list-style: upper-alpha;
@@ -457,8 +449,8 @@ div.menu li {
 #content input,
 #content textarea {
 	color: #333;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 12px;
+	line-height: 18px;
 }
 #content p,
 #content ul,
@@ -482,7 +474,7 @@ div.menu li {
 	line-height: 21px;
 }
 #content code {
-	font-size: 13px;
+	font-size: 10px;
 }
 #content dt,
 #content th {
@@ -507,9 +499,9 @@ div.menu li {
 #content tr th,
 #content thead th {
 	color: #888;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: bold;
-	line-height: 18px;
+	line-height: 14px;
 	padding: 9px 24px;
 }
 #content tr td {
@@ -555,7 +547,6 @@ div.menu li {
 }
 #content .entry-title {
 	color: #000;
-	font-size: 21px;
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 0;
@@ -571,7 +562,7 @@ div.menu li {
 }
 .entry-meta {
 	color: #888;
-	font-size: 12px;
+	font-size: 10px;
 }
 .entry-meta abbr,
 .entry-utility abbr {
@@ -609,7 +600,7 @@ div.menu li {
 }
 .entry-content label {
 	color: #888;
-	font-size: 12px;
+	font-size: 10px;
 }
 .entry-content select {
 	margin: 0 0 24px 0;
@@ -662,8 +653,8 @@ body.page .edit-link {
 	background: #f2f7fc;
 	border-top: 4px solid #000;
 	clear: both;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 10px;
+	line-height: 14px;
 	margin: 24px 0;
 	overflow: hidden;
 	padding: 18px 20px;
@@ -689,8 +680,8 @@ body.page .edit-link {
 .entry-utility {
 	clear: both;
 	color: #888;
-	font-size: 12px;
-	line-height: 18px;
+	font-size: 10px;
+	line-height: 14px;
 }
 .entry-meta a,
 .entry-utility a {
@@ -1107,7 +1098,7 @@ h3#reply-title {
 	margin-left: 0;
 }
 .widget-area ul ul {
-	list-style: square;
+	list-style: none;
 	margin-left: 1.3em;
 }
 .widget-area select {
@@ -1123,11 +1114,13 @@ h3#reply-title {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-	color: #222;
+	color: #666560;
 	font-weight: bold;
+	font-size: 16px;
 }
 .widget-area a:link,
 .widget-area a:visited {
+	color: #666560;
 	text-decoration: none;
 }
 .widget-area a:active,
@@ -1347,4 +1340,17 @@ code {
 	.home .sticky {
 		border: none;
 	}
+}
+
+ul.posts .time { width: 55px; height: 54px; float: left; background: #fff url('images/date-bg.png') no-repeat; font-family: Times New Roman; }
+ul.posts .time .month { margin-top: 4px; text-align: center; font-size: 13px; color: #474c51; }
+ul.posts .time .day { margin: 0 auto; text-align: center; font-size: 24px; line-height: 22px; color: #113f76; }
+ul.posts .entry { margin-left: 68px; line-height: 1.4em; }
+ul.posts .entry p { margin: 0; }
+#twitter-3 .widget-title {
+	margin-bottom: .5em;
+}
+ul.tweets li {
+	margin-bottom: 1.5em;
+	padding-left: 0;
 }

@@ -377,7 +377,7 @@ function twentyten_widgets_init() {
 		'id' => 'primary-widget-area',
 		'description' => __( 'The primary widget area', 'twentyten' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'after_widget' => '</li><hr class="widget-rule" />',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
