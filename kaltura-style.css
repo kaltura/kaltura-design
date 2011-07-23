@@ -23,7 +23,7 @@
 html {
        font-family: Arial, sans-serif;
        color: #666560;
-       font-size: 12px;
+       font-size: 13px;
        line-height: 1.5em;
 }
 body {
@@ -68,25 +68,25 @@ h6 {
 }
 
 h1 {
-       font-size: 3em;
-}
-h2 {
        font-size: 2.2em;
 }
-h3 {
+h2 {
        font-size: 1.7em;
-       color: #828a8c;
 }
-h4 {
+h3 {
        font-size: 1.5em;
        color: #828a8c;
 }
-h5 {
+h4 {
        font-size: 1.2em;
        color: #828a8c;
 }
-h6 {
+h5 {
        font-size: 1em;
+       color: #828a8c;
+}
+h6 {
+       font-size: .8em;
        color: #828a8c;
 }
 p {
@@ -231,7 +231,7 @@ nav li {
 #kaltura-content-menu-header
 {
 	background-color: #21879d;
-	margin-bottom: 90px;
+	margin-bottom: 64px;
 }
 #kaltura-content-menu {
 	height:54px;
@@ -443,6 +443,9 @@ span.kaltura-partners {
 table.kaltura-partners {
 	width: 100%;
 	text-align: center;
+}
+table.kaltura-partners td img {
+	vertical-align: middle;
 }
 table.kaltura-partners a {
 	opacity: .8;

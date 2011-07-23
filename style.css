@@ -445,9 +445,8 @@ div.menu li {
 #content {
 	margin-bottom: 36px;
 }
-#content,
-#content input,
-#content textarea {
+#content
+{
 	color: #333;
 	font-size: 12px;
 	line-height: 18px;
@@ -548,6 +547,7 @@ div.menu li {
 #content .entry-title {
 	color: #000;
 	font-weight: bold;
+	font-size: 3em;
 	line-height: 1.3em;
 	margin-bottom: 0;
 }
@@ -558,7 +558,7 @@ div.menu li {
 }
 .entry-title a:active,
 .entry-title a:hover {
-	color: #ff4b33;
+	color: #00cdff;
 }
 .entry-meta {
 	color: #888;
@@ -869,12 +869,12 @@ img.aligncenter {
 }
 .navigation a:link,
 .navigation a:visited {
-	color: #888;
+	color: #0fa2bb;
 	text-decoration: none;
 }
 .navigation a:active,
 .navigation a:hover {
-	color: #ff4b33;
+	color: #00cdff;
 }
 .nav-previous {
 	float: left;
@@ -1085,7 +1085,7 @@ h3#reply-title {
 	margin: 12px 0;
 }
 #respond .form-submit input {
-	font-size: 14px;
+	font-size: 12px;
 	width: auto;
 }
 

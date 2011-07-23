@@ -13,10 +13,6 @@
 </div> <!-- END Content Div Hack -->
 </content>
 <div class="clear">&nbsp;</div>
-<footer id="kaltura-footer-banner" class="container_3">
-	<h3 style="text-align:center;position:relative;top:30px">Banner Add Goes Here</h3>
-</footer>
-<div class="clear">&nbsp;</div>
 <footer id="kaltura-footer">
 	<div class="container_3">
 		<div id="kaltura-footer-remarks">
@@ -25,121 +21,36 @@
 		<div id="kaltura-footer-social">
 			<span>Stay in Touch</span><br />
 			<a href="http://twitter.com/kaltura"><img alt="Twitter" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-icon-twitter.png"></a>
-			<a href="#nowhere"><img alt="????" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-icon-chat.png"></a>
+			<a href="http://www.kaltura.org/kaltura-channel-freenode-irc-online-chat"><img alt="Freenode IRC" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-icon-chat.png"></a>
 			<a href="http://www.linkedin.com/company/kaltura"><img alt="LinkedIn" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-icon-linkedin.png"></a>
 			<a href="http://www.facebook.com/groups/kaltura"><img alt="Facebook" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-icon-facebook.png"></a>
 		</div>
 		<div class="clear">&nbsp;</div>
 		<hr class="kaltura-footer-rule" />
-		<div id="kaltura-footer-lists">
-			<nav class="kaltura-footer-list ">
-				<span><a href='http://corp.kaltura.com/video_platform/content_ingestion'>Products</a></span>
-				<ul>
-					<li><a href="http://corp.kaltura.com/video_platform/content_ingestion">Content Ingestion</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_player">Video Player</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_for_mobile">Video for Mobile</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/HTML5_Video_and_VP8">HTML5 Video</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_editing">Video Editing &amp; Annotation</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_syndication">Video Syndication</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_advertising_and_monetization">Advertising &amp; Monetization</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_management">Video Management</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_streaming">Video Streaming</a></li>
-					<li><a href="http://corp.kaltura.com/video_platform/video_hosting">Video Hosting</a></li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list ">
-				<span><a href='http://corp.kaltura.com/solutions/video_solutions'>Solutions</a></span>
-				<ul>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/video_solutions'>Solutions Overview</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/media_and_entertainment'>Media &amp; Entertainment</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/advertisers_and_marketers'>Advertisers &amp; Marketers</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/education_technology_video'>Education</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/enterprise'>Enterprise</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/service_providers_and_oem'>Service Providers &amp; OEM</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/resellers_and_vars'>Resellers &amp; VARS</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/solutions/kaltura_platform_editions'>Kaltura Platform Editions</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list ">
-				<span><a href='#nowhere'>Pricing</a><span>
-			</nav>
-			<nav class="kaltura-footer-list ">
-				<span><a href='#nowhere'>Why Kaltura?</a><span>
-			</nav>
-			<nav class="kaltura-footer-list ">
-				<span><a href='http://corp.kaltura.com/partners/partners'>Partners</a></span>
-				<ul>
-					<li>
-						<a href='http://corp.kaltura.com/partners/partners'>Overview</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/partners/category/partner-types/solutions-partners'>Solutions Partners</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/partners/category/partner-types/technology-partners'>Technology Partners</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/partners/category/partner-types/content-partners'>Content Partners</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/about/partnerSignup'>Become a Partner</a>
-					</li>
-					<li>
-						<a href='http://partner-portal.kaltura.com/'>Partner Portal</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="kaltura-footer-list ">
-				<span><a href='#nowhere'>Customers</a><span>
-			</nav>
-			<nav class="kaltura-footer-list ">
-				<span><a href='http://corp.kaltura.com/about/company'>Community</a></span>
-				<ul>
-					<li>
-						<a href='http://corp.kaltura.com/about/company'>Overview</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/news'>News</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/about/leadership'>Leadership</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/about/careers'>Careers</a>
-					</li>
-					<li>
-						<a href='http://corp.kaltura.com/about/contact'>Contact Us</a>
-					</li>
-					<li>
-						<a href='http://kaltura.com/blog/'>Blog</a>
-					</li>
-				</ul>
-			</nav>
-
-		</div>
+		<span class="kaltura-partners">Our Partners:</span>
+		<div class="clear">&nbsp;</div>
+		<table class="kaltura-partners" >
+			<tr>
+				<td>
+					<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
+				</td>
+				<!--
+				<td>
+					<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
+				</td>
+				-->
+				<td>
+					<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
+				</td>
+			</tr>
+		</table>
 		<div class="clear">&nbsp;</div>
 		<hr class="kaltura-footer-rule" />
 		<div id="kaltura-copyright" class="container_3">
 			<div id="kaltura-footer-logo">
-				<img src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" width="120" height="65">
+				<a href="http://corp.kaltura.com"><img src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" width="120" height="65"></a>
 			</div>
-			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
+			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="http://corp.kaltura.com/tandc">Terms of Use</a> and <a href="http://corp.kaltura.com/privacy">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
 		</div>
 		<div class="clear">&nbsp;</div>
 	</div>

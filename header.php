@@ -60,7 +60,7 @@
 <body <?php body_class(); ?>>
 <header id="kaltura-masthead" class="container_3">
 	<div id="kaltura-logo">
-		<img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="64" width="283">
+		<a href="http://html5video.org/"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="64" width="283"></a>
 	</div>
 	<!--
 	<nav id="kaltura-top-menu">
@@ -79,7 +79,7 @@
 			<li><a href="http://html5video.org/wiki/">Wiki</a></li>
 			<li><a class="selected" href="http://html5video.org/blog/">Blog</a></li>
 			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
-			<li><a href="http://www.kaltura.org/project/issues/2720">Issues</a></li>
+			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
 			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
 		</ul>
 	</nav>
