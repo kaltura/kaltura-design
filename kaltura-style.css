@@ -301,6 +301,7 @@ nav li {
     color: #fff;
 	text-decoration: none;
 }
+#kaltura-content-menu li.current_page_item a,
 #kaltura-content-menu a.selected
 {
     color: #fff;
