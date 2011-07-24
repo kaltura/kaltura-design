@@ -171,7 +171,22 @@ class Html5VideoTemplate extends BaseTemplate {
 			<!-- /header -->
 		</nav>
 	</header>
-	<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+		<div id="wiki-menu">
+			<nav>
+				<!-- panel -->
+					<div id="mw-panel" class="noprint">
+						<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+						<div class="portal">
+							<h5>Personal Tools</h5>
+							<div class="body">
+								<?php $this->renderNavigation( 'PERSONAL' ); ?>
+							</div>
+						</div>
+					</div>
+					<!-- /panel -->
+			</nav>
+		</div>
 	<div id="content"<?php $this->html( 'specialpageattributes' ) ?>>
 		<a id="top"></a>
 		<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>
@@ -241,22 +256,6 @@ class Html5VideoTemplate extends BaseTemplate {
 	<!-- /content -->
 </div> <!-- END Content Div Hack -->
 </content>
-<div class="clear">&nbsp;</div>
-<div id="wiki-menu">
-	<nav>
-		<!-- panel -->
-			<div id="mw-panel" class="noprint">
-				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-				<div class="portal">
-					<h5>Personal Tools</h5>
-					<div class="body">
-						<?php $this->renderNavigation( 'PERSONAL' ); ?>
-					</div>
-				</div>
-			</div>
-			<!-- /panel -->
-	</nav>
-</div>
 <div class="clear">&nbsp;</div>
 <footer id="kaltura-footer">
 	<div class="container_3">

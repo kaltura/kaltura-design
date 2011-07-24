@@ -46,7 +46,6 @@ div#content {
 	}
 div#mw-head {
 	position: relative;
-	margin-left:10em;
 	display:block;
 }
 div#mw-head h5 {
@@ -58,6 +57,7 @@ div#mw-head h5 {
 	}
 	#right-navigation {
 		float: right;
+		margin-right:10em;
 	}
 	/* Navigation Labels */
 	div.vectorTabs h5,
@@ -115,7 +115,7 @@ div#mw-head h5 {
 		padding-right: 0.5em;
 		color: #0fa2bb;
 		cursor: pointer;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 	div.vectorTabs li a:hover {
 		color:#00cdff;
@@ -148,7 +148,7 @@ div#mw-head h5 {
 	}
 	div.vectorTabs li.new a,
 	div.vectorTabs li.new a:visited{
-		color: #a55858;
+		color: #e34c26;
 	}
 	/* Variants and Actions */
 	/* @noflip */
@@ -187,7 +187,7 @@ div#mw-head h5 {
 	div#mw-head div.vectorMenu h4 {
 		display: inline-block;
 		float: left;
-		font-size: 0.8em;
+		font-size: 1em;
 		padding-left: 0.5em;
 		padding-top: 1.375em;
 		font-weight: normal;
@@ -273,7 +273,7 @@ div#mw-head h5 {
 		white-space: nowrap;
 		color:#0fa2bb;
 		cursor: pointer;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 	div.vectorMenu li a:hover {
 		color:#00cdff;
@@ -388,12 +388,11 @@ div#mw-head h5 {
 	}
 /* Panel */
 div#mw-panel {
-	position: absolute;
-	top: 194px;
+	float:right;
 	padding-top: 1em;
 	width: 10em;
-	font-size: .8em;
-	display:inline;
+	font-size: 1em;
+	display:block;
 }
 	div#mw-panel div.portal {
 		display:block;
@@ -629,7 +628,6 @@ div#footer #footer-places li {
  */
 div#content {
 	line-height: 1.5em;
-	margin-left:10em;
 }
 #bodyContent {
 	font-size: 1em;
@@ -653,10 +651,10 @@ a.stub {
 	color: #772233;
 }
 a.new, #p-personal a.new {
-	color: #ba0000;
+	color: #E34C26;
 }
 a.new:visited, #p-personal a.new:visited {
-	color: #a55858;
+	color: #e34c26;
 }
 
 /* Inline Elements */

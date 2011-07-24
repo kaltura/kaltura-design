@@ -23,7 +23,7 @@
 html {
        font-family: Arial, sans-serif;
        color: #666560;
-       font-size: 13px;
+       font-size: 10pt;
        line-height: 1.5em;
 }
 body {
@@ -333,9 +333,6 @@ nav li {
 	margin-right: 1em;	
 }
 
-#kaltura-content > div.container_3  {
-	min-height: 354px;
-}
 /* Hacks to make the content area look better */
 .kaltura-first-title
 {
@@ -534,6 +531,12 @@ table.kaltura-partners a:hover {
 #mediawiki-footer {
 	margin:auto;
 }
+#content {
+	top: 50px;
+	display:block;
+}
+/*
 div#mw-panel div.portal div.body ul li {
 		float:none;
 	}
+*/
