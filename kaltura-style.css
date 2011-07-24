@@ -274,18 +274,6 @@ nav li {
 	margin-bottom: 32px;
 	height:54px;
 	background-color: #068ea2;
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(1, rgba(0,0,0,.05)),
-		color-stop(0, #068ea2)
-	);
-	background-image: -moz-linear-gradient(
-		center top,
-		rgba(0,0,0,.15),
-		#068ea2
-	);
 }
 #kaltura-content-menu {
 	height:54px;
