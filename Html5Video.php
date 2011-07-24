@@ -276,15 +276,13 @@ class Html5VideoTemplate extends BaseTemplate {
 		<table class="kaltura-partners" >
 			<tr>
 				<td>
+					<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/wikimedia-logo.png" /></a>
+				</td>
+				<td>
 					<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/mozilla-logo.png" /></a>
 				</td>
-				<!--
 				<td>
-					<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/wikimedia-logo.png" /></a>
-				</td>
-				-->
-				<td>
-					<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/wikimedia-logo.png" /></a>
+					<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php echo htmlspecialchars( $this->text('stylepath') ); ?>/html5video/kaltura-images/ova-logo.png" /></a>
 				</td>
 			</tr>
 		</table>
