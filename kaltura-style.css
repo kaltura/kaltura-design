@@ -521,3 +521,7 @@ table.kaltura-partners a {
 table.kaltura-partners a:hover {
 	opacity: 1;
 }
+#kaltura-footer-social > * {
+	float:right;
+	padding-left:.15em;
+}
