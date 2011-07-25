@@ -156,8 +156,10 @@ class Html5VideoTemplate extends BaseTemplate {
 <content id="kaltura-content" class="container_3">
 <!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
 <div class="container_3">
+<div class="clear">&nbsp;</div>
 	<!-- content -->
-	<header width="100%">
+	<div class="kaltura-wiki-content">
+	<header>
 		<nav>
 			<!-- header -->
 			<div id="mw-head" class="noprint">
@@ -171,7 +173,76 @@ class Html5VideoTemplate extends BaseTemplate {
 			<!-- /header -->
 		</nav>
 	</header>
-<div class="clear">&nbsp;</div>
+		<div id="content"<?php $this->html( 'specialpageattributes' ) ?>>
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>
+			<?php if ( $this->data['sitenotice'] ): ?>
+			<!-- sitenotice -->
+			<div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div>
+			<!-- /sitenotice -->
+			<?php endif; ?>
+			<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading kaltura-first-title"><?php $this->html( 'title' ) ?></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<?php if ( $this->data['isarticle'] ): ?>
+				<!-- tagline -->
+				<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
+				<!-- /tagline -->
+				<?php endif; ?>
+				<!-- subtitle -->
+				<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
+				<!-- /subtitle -->
+				<?php if ( $this->data['undelete'] ): ?>
+				<!-- undelete -->
+				<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
+				<!-- /undelete -->
+				<?php endif; ?>
+				<?php if( $this->data['newtalk'] ): ?>
+				<!-- newtalk -->
+				<div class="usermessage"><?php $this->html( 'newtalk' )  ?></div>
+				<!-- /newtalk -->
+				<?php endif; ?>
+				<?php if ( $this->data['showjumplinks'] ): ?>
+				<!-- jumpto -->
+				<div id="jump-to-nav">
+					<?php $this->msg( 'jumpto' ) ?> <a href="#mw-head"><?php $this->msg( 'jumptonavigation' ) ?></a>,
+					<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
+				</div>
+				<!-- /jumpto -->
+				<?php endif; ?>
+				<!-- bodytext -->
+				<?php $this->html( 'bodytext' ) ?>
+				<!-- /bodytext -->
+				<?php if ( $this->data['printfooter'] ): ?>
+				<!-- printfooter -->
+				<div class="printfooter">
+				<?php $this->html( 'printfooter' ); ?>
+				</div>
+				<!-- /printfooter -->
+				<?php endif; ?>
+				<?php if ( $this->data['catlinks'] ): ?>
+				<!-- catlinks -->
+				<?php $this->html( 'catlinks' ); ?>
+				<!-- /catlinks -->
+				<?php endif; ?>
+				<?php if ( $this->data['dataAfterContent'] ): ?>
+				<!-- dataAfterContent -->
+				<?php $this->html( 'dataAfterContent' ); ?>
+				<!-- /dataAfterContent -->
+				<?php endif; ?>
+				<div class="visualClear"></div>
+				<!-- debughtml -->
+				<?php $this->html( 'debughtml' ); ?>
+				<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+	</div>
+	<!-- end kaltura-wiki-content -->
+	<div class="kaltura-wiki-portal">
 		<div id="wiki-menu">
 			<nav>
 				<!-- panel -->
@@ -187,73 +258,7 @@ class Html5VideoTemplate extends BaseTemplate {
 					<!-- /panel -->
 			</nav>
 		</div>
-	<div id="content"<?php $this->html( 'specialpageattributes' ) ?>>
-		<a id="top"></a>
-		<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>
-		<?php if ( $this->data['sitenotice'] ): ?>
-		<!-- sitenotice -->
-		<div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div>
-		<!-- /sitenotice -->
-		<?php endif; ?>
-		<!-- firstHeading -->
-		<h1 id="firstHeading" class="firstHeading kaltura-first-title"><?php $this->html( 'title' ) ?></h1>
-		<!-- /firstHeading -->
-		<!-- bodyContent -->
-		<div id="bodyContent">
-			<?php if ( $this->data['isarticle'] ): ?>
-			<!-- tagline -->
-			<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
-			<!-- /tagline -->
-			<?php endif; ?>
-			<!-- subtitle -->
-			<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
-			<!-- /subtitle -->
-			<?php if ( $this->data['undelete'] ): ?>
-			<!-- undelete -->
-			<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
-			<!-- /undelete -->
-			<?php endif; ?>
-			<?php if( $this->data['newtalk'] ): ?>
-			<!-- newtalk -->
-			<div class="usermessage"><?php $this->html( 'newtalk' )  ?></div>
-			<!-- /newtalk -->
-			<?php endif; ?>
-			<?php if ( $this->data['showjumplinks'] ): ?>
-			<!-- jumpto -->
-			<div id="jump-to-nav">
-				<?php $this->msg( 'jumpto' ) ?> <a href="#mw-head"><?php $this->msg( 'jumptonavigation' ) ?></a>,
-				<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
-			</div>
-			<!-- /jumpto -->
-			<?php endif; ?>
-			<!-- bodytext -->
-			<?php $this->html( 'bodytext' ) ?>
-			<!-- /bodytext -->
-			<?php if ( $this->data['printfooter'] ): ?>
-			<!-- printfooter -->
-			<div class="printfooter">
-			<?php $this->html( 'printfooter' ); ?>
-			</div>
-			<!-- /printfooter -->
-			<?php endif; ?>
-			<?php if ( $this->data['catlinks'] ): ?>
-			<!-- catlinks -->
-			<?php $this->html( 'catlinks' ); ?>
-			<!-- /catlinks -->
-			<?php endif; ?>
-			<?php if ( $this->data['dataAfterContent'] ): ?>
-			<!-- dataAfterContent -->
-			<?php $this->html( 'dataAfterContent' ); ?>
-			<!-- /dataAfterContent -->
-			<?php endif; ?>
-			<div class="visualClear"></div>
-			<!-- debughtml -->
-			<?php $this->html( 'debughtml' ); ?>
-			<!-- /debughtml -->
-		</div>
-		<!-- /bodyContent -->
 	</div>
-	<!-- /content -->
 </div> <!-- END Content Div Hack -->
 </content>
 <div class="clear">&nbsp;</div>

@@ -535,6 +535,25 @@ table.kaltura-partners a:hover {
 	top: 50px;
 	display:block;
 }
+#mw-head,
+.kaltura-wiki-portal,
+.kaltura-wiki-content
+{
+	float: left;
+	display: inline;
+	margin:0;
+	padding:0;
+}
+.kaltura-wiki-content {
+	width:85%;
+}
+.kaltura-wiki-portal {
+	width:15%;
+}
+#mw-head 
+{
+	width:100%;
+}
 /*
 div#mw-panel div.portal div.body ul li {
 		float:none;
