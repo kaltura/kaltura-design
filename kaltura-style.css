@@ -559,3 +559,7 @@ div#mw-panel div.portal div.body ul li {
 		float:none;
 	}
 */
+#kaltura-footer-social > * {
+	float:right;
+	padding-left:.15em;
+}
