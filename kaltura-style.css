@@ -554,7 +554,24 @@ table.kaltura-partners a:hover {
 {
 	width:100%;
 }
+#firstHeading {
+	display:inline-block;
+	padding-top:1.5em;
+}
+table.formtable th {
+	width:20%;
+}
+table.formtable input,
+table.formtable textarea
+{
+	width:80%;
+}
+table.formtable input[type="checkbox"] {
+	width: auto;
+}
 /*
+#bodyContent {
+}
 div#mw-panel div.portal div.body ul li {
 		float:none;
 	}
