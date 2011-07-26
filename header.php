@@ -73,9 +73,7 @@
 	-->
 	<nav id="kaltura-masthead-menu">
 		<ul>
-			<!--
-			<li><a href="#">Embed Wizard</a></li>
-			-->
+			<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
 			<li><a href="http://html5video.org/wiki/">Wiki</a></li>
 			<li><a class="selected" href="http://html5video.org/blog/">Blog</a></li>
 			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
