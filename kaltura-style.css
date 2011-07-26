@@ -270,7 +270,7 @@ nav li {
 #kaltura-content-menu-header
 {
 	background-color: #21879d;
-	margin-bottom: 90px;
+	margin-bottom: 32px;
 	background-color: #068ea2;
 	       background-image: -webkit-gradient(
 	               linear,
@@ -524,4 +524,7 @@ table.kaltura-partners a:hover {
 #kaltura-footer-social > * {
 	float:right;
 	padding-left:.15em;
+}
+table.playerInput td input[size="10"] {
+min-width:225px;
 }
