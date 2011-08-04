@@ -269,32 +269,20 @@ nav li {
 
 #kaltura-content-menu-header
 {
-	background-color: #21879d;
 	margin-bottom: 90px;
-	background-color: #068ea2;
-	       background-image: -webkit-gradient(
-	               linear,
-	               left top,
-	               left bottom,
-	               color-stop(1, rgba(0,0,0,.05)),
-	               color-stop(0, #068ea2)
-	       );
-	       background-image: -moz-linear-gradient(
-	               center top,
-	               rgba(0,0,0,.15),
-	               #068ea2
-	       );
-
+	background-color: #ff8c38;
+	background: -moz-linear-gradient(30deg, rgb(164,69,26) 0%, #ff8c38 25%, #e36d29 40%, #ff8c38 80%);
+	background: -webkit-linear-gradient(30deg, rgb(164,69,26) 0%, #ff8c38 25%, #e36d29 40%, #ff8c38 80%);
 }
 #kaltura-content-menu {
 	height:54px;
 	font-size: 1.17em;
-	text-shadow: rgba(0, 0, 0, .59) -1px -1px 1px;
+	text-shadow: rgba(0, 0, 0, .2) -1px -1px 1px;
     color: #9ed7e0;
 }
 #kaltura-content-menu a
 {
-    color: #9ed7e0;
+    color: #004b99;
 }
 #kaltura-content-menu a:hover
 {
@@ -390,21 +378,21 @@ nav li {
 }
 #kaltura-footer
 {
-	background-color: #21879d;
 	margin-top: 90px;
 	padding-bottom:64px;
-	background-color: #068ea2;
+	background-color: #71787a;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
-		color-stop(0, #068ea2),
+		color-stop(0, #71787a),
 
 		color-stop(1, rgba(0,0,0,.25))
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#068ea2,
+		#71787a,
+		#71787a,
 		rgba(0,0,0,.25)
 	);
 }
@@ -457,19 +445,19 @@ nav li {
 	margin-top: 24px;
 	border:0;
     height: 1px;
-    background: rgb(15,162,187);
+    background: rgb(113,120,122);
     background: 
 		-webkit-gradient(
 			linear, 
 			0 0, 
 			100% 0, 
-			from( rgba(0,205,255, 0) ), 
-			to( rgba(0,205,255, 0) ), 
-			color-stop(10%,  rgba(15,162,187, .9) ), 
-			color-stop(90%,  rgba(15,162,187, .9) )
+			from( rgba(113,120,122, 0) ), 
+			to( rgba(113,120,122, 0) ), 
+			color-stop(10%,  rgba(113,120,122, .9) ), 
+			color-stop(90%,  rgba(113,120,122, .9) )
 		);
 	background: -moz-linear-gradient(left, 
-		rgba(15,162,187,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(15,162,187,.25));
+		rgba(113,120,122,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(113,120,122,.25));
 }
 .kaltura-footer-list {
 display:inline;
@@ -485,7 +473,7 @@ display:inline;
 {
 	padding-top: 24px;
 	display:block;
-	color:#fff;
+	color:#000;
 	font-size: .8em;
 }
 #kaltura-copyright p
@@ -497,29 +485,25 @@ display:inline;
 #kaltura-copyright a:visited
 {
 	text-decoration: underline;
-	color:#fff;
+	color:#000;
 }
-#kaltura-footer-logo
-{
-	display:inline;
-	float:left;
-	width:160px;
-}
-span.kaltura-partners {
+.kaltura-partners {
 	color:white;
 	font-weight: bold;
 	margin-top: 24px;
-	display:block;
 }
 table.kaltura-partners {
 	width: 100%;
-	text-align: center;
+	text-align: right;
 }
 table.kaltura-partners a {
 	opacity: .8;
 }
 table.kaltura-partners a:hover {
 	opacity: 1;
+}
+.left-aligned {
+	text-align: left;
 }
 #kaltura-footer-social > * {
 	float:right;
