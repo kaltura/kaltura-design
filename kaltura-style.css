@@ -169,7 +169,8 @@ form input.kaltura-search[type=button]:focus
  	background-image:none;
 }
 
-form input.kaltura-button2 {
+form input.kaltura-button2,
+form input.kaltura-button3 {
 	border: none;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -191,7 +192,8 @@ form input.kaltura-button2 {
 		rgba(0,0,0,.25)
 	);
 }
-form input.kaltura-button2:hover {
+form input.kaltura-button2:hover
+{
 	color: #fff;
 	border: none;
 	background-color: #30aec7;
@@ -205,6 +207,39 @@ form input.kaltura-button2:hover {
 	background-image: -moz-linear-gradient(
 		center top,
 		#30aec7 12%,
+		rgba(0,0,0,.1) 88%%
+	);
+}
+form input.kaltura-button3 {
+	background-color: #6fb1fb;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(.12, #6fb1fb),
+		color-stop(.88, rgba(0,0,0,.1))
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#6fb1fb,
+		rgba(0,0,0,.1)
+	);
+}
+form input.kaltura-button3:hover
+{
+	color: #fff;
+	border: none;
+	background-color: #92c4fd;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(.12, #92c4fd),
+		color-stop(.88, rgba(0,0,0,.1))
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#92c4fd 12%,
 		rgba(0,0,0,.1) 88%%
 	);
 }
@@ -483,6 +518,27 @@ hr.widget-rule {
 	background: -moz-linear-gradient(left, 
 		rgba(113,120,122,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(113,120,122,.25));
 }
+.kaltura-vertical-rule {
+	position:absolute;
+	left:310px;
+    margin: -4px 0;
+	margin-top: 0;
+	height:60px;
+	width: 1px;
+    background: rgb(113,120,122);
+    background: 
+		-webkit-gradient(
+			linear, 
+			0 0, 
+			0 100%, 
+			from( rgba(113,120,122, 0) ), 
+			to( rgba(113,120,122, 0) ), 
+			color-stop(10%,  rgba(113,120,122, .9) ), 
+			color-stop(90%,  rgba(113,120,122, .9) )
+		);
+	background: -moz-linear-gradient(bottom, 
+		rgba(113,120,122,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(113,120,122,.25));
+}
 .kaltura-footer-list {
 display:inline;
 	float: left;
@@ -516,21 +572,14 @@ display:inline;
 	font-weight: bold;
 	margin-top: 24px;
 }
-table.kaltura-partners {
-	width: 100%;
-	text-align: right;
-}
-table.kaltura-partners td img {
-	vertical-align: middle;
-}
-table.kaltura-partners a {
+.kaltura-partners a {
 	opacity: .8;
 }
-table.kaltura-partners a:hover {
+.kaltura-partners a:hover {
 	opacity: 1;
 }
-.left-aligned {
-	text-align: left;
+.kaltura-partners img {
+	margin:0 1em;
 }
 #kaltura-footer-social > * {
 	float:right;
