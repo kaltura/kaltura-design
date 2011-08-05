@@ -60,7 +60,7 @@
 <body <?php body_class(); ?>>
 <header id="kaltura-masthead" class="container_3">
 	<div id="kaltura-logo">
-		<a href="http://html5video.org/"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="64" width="283"></a>
+		<a href="http://html5video.org/"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="60" width="228"></a>
 	</div>
 	<!--
 	<nav id="kaltura-top-menu">
