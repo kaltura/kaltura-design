@@ -111,7 +111,7 @@ Template Name: Front Page
 	<div class="container_3">
 		<div class="grid_1 kaltura-front-feed">
 			<h2 class="kaltura-front-feed-header">HTML5 News</h2>
-			<?php global $post; $myposts = get_posts('category_name=news&numberposts=0'); ?>
+			<?php global $post; $myposts = get_posts('category_name=news&numberposts=7'); ?>
 			<ul class="posts">
 			<?php foreach($myposts as $post): ?>
 			<?php setup_postdata($post); ?>
@@ -123,11 +123,11 @@ Template Name: Front Page
 				</li>
 			<?php endforeach; ?>
 			</ul>
-			<div class="more"><a href="news">More news</a></div>
+			<div class="kaltura-button1"><a href="news">More news &raquo;</a></div>
 		</div>
 		<div class="grid_1 kaltura-front-feed">
 			<h2 class="kaltura-front-feed-header">Recent Blog Posts</h2>
-			<?php global $post; $myposts = get_posts('cat=-4&numberposts=0'); ?>
+			<?php global $post; $myposts = get_posts('cat=-4&numberposts=5'); ?>
 			<ul class="posts">
 			<?php foreach($myposts as $post): ?>
 			<?php setup_postdata($post); ?>
@@ -140,43 +140,66 @@ Template Name: Front Page
 				</li>
 			<?php endforeach; ?>
 			</ul>
-			<div class="kaltura-button"><a href="news">More news</a></div>
+			<div class="kaltura-button1"><a href="news">More posts &raquo;</a></div>
 		</div>
 		<div class="grid_1 kaltura-front-sidebar">
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'search',
-  search: '"html5 video" OR html5video OR openvideo OR openmedia OR kaltura',
-  interval: 6000,
-  title: '#openvideo &amp; #html5 tweets',
-  subject: 'HTML5 Video',
-  width: 270,
-  height: 300,
-  theme: {
-    shell: {
-      background: '#8ec1da',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#444444',
-      links: '#1985b5'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: true,
-    live: true,
-    hashtags: true,
-    timestamp: true,
-    avatars: true,
-    toptweets: true,
-    behavior: 'default'
-  }
-}).render().start();
-</script>
+			<div class="kaltura-solutions">
+				<div class="solutions-container">
+				<h3>Looking for a Video Solution?</h3>
+				<p>Try Kaltura's commercial Video Platform with HTML5 support</p>
+				</div>
+				<span><a href="http://corp.kaltura.com/about/signup">&raquo;</a></span>
+			</div>
+			<ul class="kaltura-front-connect">
+				<li class="webinars">
+					<h2 class="title">Kaltura Inspire Webinars</h2>
+					<h3>Upcoming</h3>
+					<p>The Future of Media in SharePoint</p>
+					<span class="date">Thursday, August 11, 2:00 PM EDT</span>
+					<p><a href="http://www.kaltura.org/kaltura-inspire-webinar-registration">Learn more and sign up &raquo;</a></p>
+					<p><a href="http://www.kaltura.org/kaltura-inspire-webinar">View on-demand webinars &raquo;</a></p>
+				</li>
+				<li class="forums">
+					<h2 class="title">HTML5 Video Forum</h2>
+					<p><a href="#">Contribute, ask a question, join the conversation &raquo;</a></p>
+				</li>
+			</ul>
+
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'search',
+			  search: '"html5 video" OR html5video OR openvideo OR openmedia OR kaltura',
+			  interval: 6000,
+			  title: '#openvideo &amp; #html5 tweets',
+			  subject: 'HTML5 Video',
+			  width: 270,
+			  height: 300,
+			  theme: {
+				shell: {
+				  background: '#8ec1da',
+				  color: '#ffffff'
+				},
+				tweets: {
+				  background: '#ffffff',
+				  color: '#444444',
+				  links: '#1985b5'
+				}
+			  },
+			  features: {
+				scrollbar: false,
+				loop: true,
+				live: true,
+				hashtags: true,
+				timestamp: true,
+				avatars: true,
+				toptweets: true,
+				behavior: 'default'
+			  }
+			}).render().start();
+			</script>
+		<!--	
 			<span class="follow-us">Follow us:</span> 
 			<a href="<?php bloginfo('rss2_url'); ?>" class="follow-icon rss">Rss Feed</a>
 			<div class="stay-updated">
@@ -186,7 +209,7 @@ new TWTR.Widget({
 				<p>
 					Send us your email and we'll keep you up to date with the latest HTML5 Video news
 				</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
