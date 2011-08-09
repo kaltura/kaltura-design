@@ -564,12 +564,35 @@ hr.widget-rule {
 	background: -moz-linear-gradient(left, 
 		rgba(113,120,122,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(255,255,255,.25), rgba(113,120,122,.25));
 }
+.kaltura-partners {
+	color:white;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-bottom: 0;
+}
+.kaltura-partners a {
+	opacity: .8;
+}
+.kaltura-partners a:hover {
+	opacity: 1;
+}
+.kaltura-partners img {
+	margin:0 1em;
+}
+.kaltura-partners {
+}
+.kaltura-partners .grid_1 {
+	width: 265px;
+}
+.kaltura-partners .grid_2 {
+	width: 600px;
+}
 .kaltura-vertical-rule {
-	position:absolute;
-	left:310px;
-    margin: -4px 0;
-	margin-top: 0;
+	display:inline;
+	float:left;
+	position:relative;
 	height:60px;
+	margin: 0 1em;
 	width: 1px;
     background: rgb(113,120,122);
     background: 
