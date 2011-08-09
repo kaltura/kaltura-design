@@ -10,8 +10,7 @@
  * @since Twenty Ten 1.0
  */
 ?>
-</div> <!-- END Content Div Hack -->
-</content>
+</div>
 <div class="clear">&nbsp;</div>
 <footer id="kaltura-footer">
 	<div class="container_3">

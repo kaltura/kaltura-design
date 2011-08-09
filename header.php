@@ -75,7 +75,7 @@
 		<ul>
 			<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
 			<li><a href="http://html5video.org/wiki/">Wiki</a></li>
-			<li><a class="selected" href="http://html5video.org/blog/">Blog</a></li>
+			<li><a class="selected" href="http://html5video.org/blog/">News</a></li>
 			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
 			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
 			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
@@ -83,7 +83,7 @@
 	</nav>
 </header>
 <div class="clear">&nbsp;</div>
-<header id="kaltura-content-menu-header" width="100%">
+<header id="kaltura-content-menu-header">
 	<nav id="kaltura-content-menu" class="container_3">
 			  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentyten' ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a></div>
@@ -92,6 +92,4 @@
 	</nav>
 </header>
 <div class="clear">&nbsp;</div>
-<content id="kaltura-content" class="container_3">
-<!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
-<div class="container_3">
+<div id="kaltura-content" class="container_3">

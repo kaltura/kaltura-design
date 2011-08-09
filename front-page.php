@@ -59,7 +59,7 @@ Template Name: Front Page
 <body <?php body_class(); ?>>
 <header id="kaltura-masthead" class="container_3">
 	<div id="kaltura-logo">
-		<a href="http://html5video.org/"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="60" width="228"></a>
+		<a href="http://html5video.org/"><img alt="HTML5 Video" src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="60" width="228"></a>
 	</div>
 	<!--
 	<nav id="kaltura-top-menu">
@@ -74,7 +74,7 @@ Template Name: Front Page
 		<ul>
 			<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
 			<li><a href="http://html5video.org/wiki/">Wiki</a></li>
-			<li><a class="selected" href="http://html5video.org/blog/">Blog</a></li>
+			<li><a class="selected" href="http://html5video.org/blog/">News</a></li>
 			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
 			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
 			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
@@ -82,7 +82,7 @@ Template Name: Front Page
 	</nav>
 </header>
 <div class="clear">&nbsp;</div>
-<header id="kaltura-content-menu-header" width="100%">
+<header id="kaltura-content-menu-header">
 	<div id="kaltura-content-menu" class="container_3">
 <!-- <iframe src="http://html5.kaltura.org/mwEmbedFrame.php/wid/_322481/entry_id/1_4ctagbm9/"> -->
 		<div id="kaltura-video">&nbsp;</div>
@@ -95,6 +95,7 @@ Template Name: Front Page
 			<p>
 				The HTML5 standard includes many new features for more dynamic web applications and interfaces. One such component being specified and implemented is the &lt;video&gt; element.
 			</p>
+			<p> Using an HTML5 Javascript Library, your videos can be played back on the latest mobile devices and even on older browsers that require Flash.</p>
 			<div class="kaltura-button3 button">
 				<a href="#">GET STARTED</a>
 			</div>
@@ -106,9 +107,7 @@ Template Name: Front Page
 	</div>
 </header>
 <div class="clear">&nbsp;</div>
-<content id="kaltura-content" class="container_3">
-<!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
-<div class="container_3">
+<div id="kaltura-content" class="container_3">
 	<div class="container_3">
 		<div class="grid_1 kaltura-front-feed">
 			<h2 class="kaltura-front-feed-header">HTML5 News</h2>
@@ -143,7 +142,7 @@ Template Name: Front Page
 			</ul>
 			<div class="kaltura-button"><a href="news">More news</a></div>
 		</div>
-		<div class="grid_1">
+		<div class="grid_1 kaltura-front-sidebar">
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
@@ -153,7 +152,7 @@ new TWTR.Widget({
   interval: 6000,
   title: '#openvideo &amp; #html5 tweets',
   subject: 'HTML5 Video',
-  width: 320,
+  width: 270,
   height: 300,
   theme: {
     shell: {
@@ -190,8 +189,7 @@ new TWTR.Widget({
 			</div>
 		</div>
 	</div>
-</div> <!-- END Content Div Hack -->
-</content>
+</div>
 <div class="clear">&nbsp;</div>
 <footer id="kaltura-footer">
 	<div class="container_3">
