@@ -105,75 +105,72 @@ form textarea {
 	-webkit-border-radius: 5px;
 	padding:.25em;
 }
+div.kaltura-button1,
+div.kaltura-button2,
+div.kaltura-button3
+{
+	margin:.25em;
+	padding:.5em;
+}
+div.kaltura-button1 a:hover,
+div.kaltura-button2 a:hover,
+div.kaltura-button3 a:hover
+{
+	text-decoration: none;
+}
 form input[type=submit],
-form input[type=button] {
-	color: #0fa2bb;
+form input[type=button],
+div.kaltura-button1 a,
+div.kaltura-button2 a,
+div.kaltura-button3 a,
+form input.kaltura-button1,
+form input.kaltura-button2,
+form input.kaltura-button3
+{
 	font-weight: bold;
 	margin: .25em;
+	padding: .5em;
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #0fa2bb;
+	border: 1px solid #a7a7a7;
+	background-color: #068ea2;
 	background-image: -webkit-gradient(
 		linear,
-		left 17,
-		left 22,
-		color-stop(0.24, #fefefe),
-		color-stop(0.62, #eaeaea)
+		left 0,
+		left 27,
+		color-stop(0, #fff),
+		color-stop(0.5, #fff),
+		color-stop(1, #bababa)
 	);
 	background-image: -moz-linear-gradient(
 		center bottom,
-		#bababa 8%,
-		white 16%
+		#bababa 1%,
+		white 20%
 	);
 }
 form input[type=submit]:hover,
-form input[type=button]:hover {
-	color: #00cdff;
-	border: 1px solid #00cdff;
-	background-image: none;
-	background-color: #fff;
-}
-
-form input.kaltura-search[type=text] {
-	float: left;
-	display: inline-block;
-	border-right: none;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	margin-right: 0;
-	padding-right: 0;
-}
-form input.kaltura-search[type=button] {
-	color: #0fa2bb;
-	border: 1px solid #a7a7a7;
-	background-image: none;
-	background-color: #fff;
-	float: left;
-	display: inline-block;
-	border-left: none;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	margin-left: 0;
-	padding-left: 0;
-	width:30px;
-	color:green;
-	background-image: url(kaltura-images/search-icon.png);
-	background-repeat: no-repeat;
-	background-position: right center;
-}
-form input.kaltura-search[type=button]:hover,
-form input.kaltura-search[type=button]:focus
+form input[type=button]:hover,
+div.kaltura-button1 a:hover,
+div.kaltura-button2 a:hover,
+div.kaltura-button3 a:hover,
+form input.kaltura-button1:hover,
+form input.kaltura-button2:hover,
+form input.kaltura-button3:hover
 {
-	border: 1px solid #a7a7a7;
-	border-left: none;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	color: #0fa2bb;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid #00cdff;
+	color: #00cdff;
  	background-image:none;
 }
-
 div.kaltura-button2 a,
 div.kaltura-button3 a,
 form input.kaltura-button2,
 form input.kaltura-button3 {
-	font-color:white;
+	font-color: white;
 	border: none;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -250,6 +247,47 @@ form input.kaltura-button3:hover
 		rgba(0,0,0,.1) 88%%
 	);
 }
+
+/* Kaltura Search */
+
+form input.kaltura-search[type=text] {
+	float: left;
+	display: inline-block;
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+	padding-right: 0;
+}
+form input.kaltura-search[type=button] {
+	color: #0fa2bb;
+	border: 1px solid #a7a7a7;
+	background-image: none;
+	background-color: #fff;
+	float: left;
+	display: inline-block;
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: 0;
+	padding-left: 0;
+	width:30px;
+	color:green;
+	background-image: url(kaltura-images/search-icon.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+form input.kaltura-search[type=button]:hover,
+form input.kaltura-search[type=button]:focus
+{
+	border: 1px solid #a7a7a7;
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	color: #0fa2bb;
+ 	background-image:none;
+}
+
 /* Kaltura Box Highlight */
 .kaltura-box {
 	border: 1px solid #a7a7a7;

@@ -26,7 +26,7 @@
 			<li><a class="selected" href="http://staging.html5video.org/kaltura-design/inner_template.html">Wireframe</a></li>
 			<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
 			<li><a href="http://html5video.org/wiki/">Wiki</a></li>
-			<li><a href="http://html5video.org/blog/">Blog</a></li>
+			<li><a href="http://html5video.org/blog/">News</a></li>
 			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
 			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
 			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
@@ -142,20 +142,36 @@
 		</div>
 	</form>
 	<div class="clear"></div>
-	<h1>Buttons</h1>
-	<form action="#">
-		<div>
-			<input type="button" value="Button 1" />
+	<div class="grid_1">
+		<h1>Form Buttons</h1>
+		<form action="#">
+			<div>
+				<input type="button" class="kaltura-button1" value="Button 1" />
+			</div>
+			<div>
+				<input type="button" class="kaltura-button2" value="Button 2" />
+			</div>
+			<div>
+				<input type="button" class="kaltura-button3" value="Button 3" />
+			</div>
+		</form>
+	</div>
+	<div class="grid_1">
+		<h1>Div Buttons</h1>
+		<div class="kaltura-button1">
+			<span><a href="#">text</a></span>
 		</div>
-		<div>
-			<input type="button" class="kaltura-button2" value="Button 2" />
+	<div class="clear"></div>
+		<div class="kaltura-button2">
+			<span><a href="#">text</a></span>
 		</div>
-		<div>
-			<input type="button" class="kaltura-button3" value="Button 3" />
+	<div class="clear"></div>
+		<div class="kaltura-button3">
+			<span><a href="#">text</a></span>
 		</div>
-	</form>
-
-
+	<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
 	<h1>Grid Columns</h1>
 	<div class="grid_1">
 		<p>Here are three colums,  I have selected a 960.gs with three colums and no margins or padding.  This makes positioning elements super simple, but makes text hard to read. so I added the following css to help the paragraphs out:</p>
