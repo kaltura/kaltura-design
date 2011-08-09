@@ -28,28 +28,35 @@
 		<div class="clear">&nbsp;</div>
 		<hr class="kaltura-footer-rule" />
 		<div class="clear">&nbsp;</div>
-		<table class="kaltura-partners" >
-			<tr>
-				<td class="left-aligned">
-					<a href="http://html5video.org/"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
-				</td>
-				<td class="left-aligned">
-					<a href="http://corp.kaltura.com/"><img alt="Kaltura" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" /></a>
-				</td>
-				<td>
-					Our Partners
-				</td>
-				<td>
-					<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
-				</td>
-				<td>
-					<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
-				</td>
-				<td>
-					<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/ova-logo.png" /></a>
-				</td>
-			</tr>
-		</table>
+		<nav class="kaltura-partners">
+			<div class="grid_1">
+				<ul>
+					<li>
+							<a href="http://html5video.org/"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
+					</li>
+					<li>
+							<a href="http://corp.kaltura.com/"><img alt="Kaltura" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="kaltura-vertical-rule">&nbsp;</div>
+			<div class="grid_2">
+				<ul>
+					<li>
+							Our Partners
+					</li>
+					<li>
+							<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
+					</li>
+					<li>
+							<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
+					</li>
+					<li>
+							<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/ova-logo.png" /></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<hr class="kaltura-footer-rule" />
 		<div id="kaltura-copyright" class="container_3">
 			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="http://corp.kaltura.com/tandc">Terms of Use</a> and <a href="http://corp.kaltura.com/privacy">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>

@@ -83,8 +83,10 @@ Template Name: Front Page
 </header>
 <div class="clear">&nbsp;</div>
 <header id="kaltura-content-menu-header" width="100%">
-	<div class="container_3">
 	<div id="kaltura-content-menu" class="container_3">
+<!-- <iframe src="http://html5.kaltura.org/mwEmbedFrame.php/wid/_322481/entry_id/1_4ctagbm9/"> -->
+		<div id="kaltura-video">&nbsp;</div>
+		<div id="video-credit"><span><a href="http://www.sitasingstheblues.com/">Sita Sings the Blues</a> by Nina Paley</span></div>
 		<div class="what-is">
 			<h1>What is HTML5 Video?</h1>
 			<p>
@@ -93,98 +95,100 @@ Template Name: Front Page
 			<p>
 				The HTML5 standard includes many new features for more dynamic web applications and interfaces. One such component being specified and implemented is the &lt;video&gt; element.
 			</p>
+			<div class="kaltura-button3 button">
+				<a href="#">GET STARTED</a>
+			</div>
+			<div class="kaltura-button2 button">
+				<a>CONTACT US</a>
+			</div>
 		</div>
-		<div id="kaltura-content-menu-shapes" class="container_3">
-		</div>
-<!-- <iframe src="http://html5.kaltura.org/mwEmbedFrame.php/wid/_322481/entry_id/1_4ctagbm9/"> -->
-      <div id="kaltura-video">&nbsp</div>
-      <div id="video-credit"><span><a href="http://www.sitasingstheblues.com/">Sita Sings the Blues</a> by Nina Paley</span></div>
-	</div>
+		<div id="kaltura-content-menu-shapes"></div>
 	</div>
 </header>
 <div class="clear">&nbsp;</div>
 <content id="kaltura-content" class="container_3">
 <!-- unfortunatly, content block's class doesn't respond to css, till it does, use a div -->
 <div class="container_3">
-	<div id="player-container">
-		<div class="arrow"></div>
-		<div class="player">
-
-
-    </div>
-		<div class="arrow"></div>
-	</div>
-	<div id="content">
-			<h2>Industry News &amp; Resources</h2>
-			<?php global $post; $myposts = get_posts('category_name=home&numberposts=0'); ?>
+	<div class="container_3">
+		<div class="grid_1 kaltura-front-feed">
+			<h2 class="kaltura-front-feed-header">HTML5 News</h2>
+			<?php global $post; $myposts = get_posts('category_name=news&numberposts=0'); ?>
 			<ul class="posts">
 			<?php foreach($myposts as $post): ?>
 			<?php setup_postdata($post); ?>
 				<li>
-					<div class="time">
-						<div class="month"><?php the_time('M') ?></div>
-						<div class="day"><?php the_time('j') ?></div>
-					</div>
-					<div class="entry">
-						<?php the_content('Read the rest of this entry &raquo;'); ?>
+					<div class="front-time"><a href="<?php the_permalink(); ?>"><?php the_time('F j, Y'); ?></a></div>
+					<div class="front-entry">
+						<?php the_content('Read more &raquo;'); ?>
 					</div>
 				</li>
 			<?php endforeach; ?>
 			</ul>
 			<div class="more"><a href="news">More news</a></div>
-			<span class="follow-us">Follow us:</span> 
-			<a href="<?php bloginfo('rss2_url'); ?>" class="follow-icon rss"></a>
-			<a href="http://www.facebook.com/group.php?gid=14106775310" target="_blank" class="follow-icon fb"></a>
-			<a href="http://twitter.com/Kaltura" target="_blank" class="follow-icon twitter"></a>
-			<a href="http://www.linkedin.com/groups?gid=2179100&amp;trk=myg_ugrp_ovr" target="_blank" class="follow-icon in"></a>
-	</div>
-	<div id="sidebar">
-		<ul>
-		<?php dynamic_sidebar('front-sidebar'); ?>
-		</ul>
-		<div class="stay-updated">
-			<h2>Stay Updated</h2>
-			<input name="stay-updated-email" type="text" />
-			<a href="" class="signup-button" onclick="return stayUpdated();"></a>
-			<p>
-				Send us your email and we'll keep you up to date with the latest HTML5 Video news
-			</p>
 		</div>
-		<script type="text/javascript">
-		function stayUpdated() {
-			var url = "<?php echo site_url('/wp-content/plugins/email_plugin/register.php'); ?>";
-			var $email = jQuery('input[name=stay-updated-email]');
-			if ($email.attr('disabled'))
-				return false;
-			if ($email.val().indexOf('@') == -1) {
-				$email.addClass('invalid');
-				return false;
-			}
-			var email = $email.val();
-			$email.removeClass('invalid');
-			$email.val('Please wait...');
-			$email.attr('disabled', true);
-			jQuery.ajax({
-				url: url,
-				data: { email: email },
-				success: function (data) {
-					if (data != 'ok') {
-						this.error();
-						return;
-					}
-					
-					$email.val('Email submitted successfully!');
-				},
-				error: function () {
-					$email.val(email);
-					$email.removeAttr('disabled');
-					alert('An error occured, please try again');
-				}
-			});
-
-			return false;
-		}
-		</script>
+		<div class="grid_1 kaltura-front-feed">
+			<h2 class="kaltura-front-feed-header">Recent Blog Posts</h2>
+			<?php global $post; $myposts = get_posts('cat=-4&numberposts=0'); ?>
+			<ul class="posts">
+			<?php foreach($myposts as $post): ?>
+			<?php setup_postdata($post); ?>
+				<li>
+					<div class="front-time"><a href="<?php the_permalink(); ?>"><?php the_time('F j, Y'); ?></a></div>
+					<div class="front-entry">
+						<p><strong><?php the_title(); ?></strong></p>
+						<?php the_excerpt(); ?>
+					</div>
+				</li>
+			<?php endforeach; ?>
+			</ul>
+			<div class="kaltura-button"><a href="news">More news</a></div>
+		</div>
+		<div class="grid_1">
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '"html5 video" OR html5video OR openvideo OR openmedia OR kaltura',
+  interval: 6000,
+  title: '#openvideo &amp; #html5 tweets',
+  subject: 'HTML5 Video',
+  width: 320,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#8ec1da',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+			<span class="follow-us">Follow us:</span> 
+			<a href="<?php bloginfo('rss2_url'); ?>" class="follow-icon rss">Rss Feed</a>
+			<div class="stay-updated">
+				<h2>Stay Updated</h2>
+				<input name="stay-updated-email" type="text" />
+				<a href="" class="signup-button" onclick="return stayUpdated();"></a>
+				<p>
+					Send us your email and we'll keep you up to date with the latest HTML5 Video news
+				</p>
+			</div>
+		</div>
 	</div>
 </div> <!-- END Content Div Hack -->
 </content>
@@ -204,28 +208,36 @@ Template Name: Front Page
 		<div class="clear">&nbsp;</div>
 		<hr class="kaltura-footer-rule" />
 		<div class="clear">&nbsp;</div>
-		<table class="kaltura-partners" >
-			<tr>
-				<td class="left-aligned">
-					<a href="http://html5video.org/"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
-				</td>
-				<td class="left-aligned">
-					<a href="http://corp.kaltura.com/"><img alt="Kaltura" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" /></a>
-				</td>
-				<td>
-					Our Partners
-				</td>
-				<td>
-					<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
-				</td>
-				<td>
-					<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
-				</td>
-				<td>
-					<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/ova-logo.png" /></a>
-				</td>
-			</tr>
-		</table>
+		<nav class="kaltura-partners">
+			<div class="grid_1">
+				<ul>
+					<li>
+							<a href="http://html5video.org/"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
+					</li>
+					<li>
+							<a href="http://corp.kaltura.com/"><img alt="Kaltura" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="kaltura-vertical-rule">&nbsp;</div>
+			<div class="grid_2">
+				<ul>
+					<li>
+							Our Partners
+					</li>
+					<li>
+							<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
+					</li>
+					<li>
+							<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
+					</li>
+					<li>
+							<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/ova-logo.png" /></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="clear">&nbsp;</div>
 		<hr class="kaltura-footer-rule" />
 		<div id="kaltura-copyright" class="container_3">
 			<p>Copyright &copy; 2011 Kaltura Inc.<br/>All Rights Reserved.  Designed Trademarks and brands are the property of their respective owners.  Use of this web site constitutes acceptance of <a href="http://corp.kaltura.com/tandc">Terms of Use</a> and <a href="http://corp.kaltura.com/privacy">Privacy Policy</a>.  User submitted media on this site is licensed under:  Creative Commons Attribution-Share Alike 3.0 Unported License.</p>
@@ -279,7 +291,7 @@ Template Name: Front Page
 					size = size+"%";
 					xpos = 960 - Math.floor(Math.random()*width);
 					ypos = 360 - Math.floor(Math.random()*height);
-					$('#kaltura-content-menu-shapes').append('<img id="shape'+i+'" src="<?php bloginfo( "template_directory" ); ?>/kaltura-images/html5-badge-shape.svg" />');
+					$('#kaltura-content-menu-shapes').prepend('<img id="shape'+i+'" src="<?php bloginfo( "template_directory" ); ?>/kaltura-images/html5-badge-shape.svg" />');
 					$('#shape'+i).css({'width' : size , 'height' : size, 'position' : 'absolute', 'opacity' : .02 + Math.random()*.15, 'top' : ypos, 'left' : xpos });
 					$('#shape'+i).plaxify({"xRange":10+parallax,"yRange":10+parallax});
 				}
@@ -288,6 +300,41 @@ Template Name: Front Page
 				$('#topShape').plaxify({"xRange":20,"yRange":20, "invert":true});
 				$.plax.enable();
 			});
+		</script>
+		<script type="text/javascript">
+		function stayUpdated() {
+			var url = "<?php echo site_url('/wp-content/plugins/email_plugin/register.php'); ?>";
+			var $email = jQuery('input[name=stay-updated-email]');
+			if ($email.attr('disabled'))
+				return false;
+			if ($email.val().indexOf('@') == -1) {
+				$email.addClass('invalid');
+				return false;
+			}
+			var email = $email.val();
+			$email.removeClass('invalid');
+			$email.val('Please wait...');
+			$email.attr('disabled', true);
+			jQuery.ajax({
+				url: url,
+				data: { email: email },
+				success: function (data) {
+					if (data != 'ok') {
+						this.error();
+						return;
+					}
+					
+					$email.val('Email submitted successfully!');
+				},
+				error: function () {
+					$email.val(email);
+					$email.removeAttr('disabled');
+					alert('An error occured, please try again');
+				}
+			});
+
+			return false;
+		}
 		</script>
 
 <!--

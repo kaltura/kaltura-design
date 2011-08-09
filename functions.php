@@ -538,3 +538,9 @@ function setup_demo_post_type()
         register_post_type('demo',$args);
         register_taxonomy_for_object_type('post_tag', 'demo');
 }
+
+function new_excerpt_more($more) {
+	       global $post;
+	   return '... <br /><a class="read-more" href="'. get_permalink($post->ID) . '">Read more &raquo;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

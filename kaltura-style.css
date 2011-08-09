@@ -169,8 +169,11 @@ form input.kaltura-search[type=button]:focus
  	background-image:none;
 }
 
+div.kaltura-button2 a,
+div.kaltura-button3 a,
 form input.kaltura-button2,
 form input.kaltura-button3 {
+	font-color:white;
 	border: none;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -192,6 +195,7 @@ form input.kaltura-button3 {
 		rgba(0,0,0,.25)
 	);
 }
+div.kaltura-button2 a:hover,
 form input.kaltura-button2:hover
 {
 	color: #fff;
@@ -210,7 +214,9 @@ form input.kaltura-button2:hover
 		rgba(0,0,0,.1) 88%%
 	);
 }
+div.kaltura-button3 a,
 form input.kaltura-button3 {
+	color:white;
 	background-color: #6fb1fb;
 	background-image: -webkit-gradient(
 		linear,
@@ -225,6 +231,7 @@ form input.kaltura-button3 {
 		rgba(0,0,0,.1)
 	);
 }
+div.kaltura-button3 a:hover,
 form input.kaltura-button3:hover
 {
 	color: #fff;
@@ -313,21 +320,22 @@ nav li {
 	height:54px;
 	font-size: 1.17em;
 	text-shadow: rgba(0, 0, 0, .2) -1px -1px 1px;
-    color: #9ed7e0;
+    color: white;
+	font-weight:bold;
 }
 #kaltura-content-menu a
 {
-    color: #004b99;
+	color: white;
 }
 #kaltura-content-menu a:hover
 {
-    color: #fff;
+    color: #DCDCDC;
 	text-decoration: none;
 }
 #kaltura-content-menu li.current_page_item a,
 #kaltura-content-menu a.selected
 {
-    color: #fff;
+    color: #3b3b3b;
 	font-weight: bold;
 	/* no background right now
 	background: url(kaltura-images/content-menu-hover.png);
@@ -571,6 +579,7 @@ display:inline;
 	color:white;
 	font-weight: bold;
 	margin-top: 24px;
+	margin-bottom: 24px;
 }
 .kaltura-partners a {
 	opacity: .8;

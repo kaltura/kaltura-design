@@ -20,11 +20,11 @@
 	width: 960px;
 	height: 360px;
 	overflow-y: hidden
-	z-index: 0;
+	z-index: -1;
 }
 #kaltura-content-menu-shapes img {
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 }
 #kaltura-logo,
 #kaltura-masthead-menu
@@ -32,7 +32,8 @@
 	z-index: 500;
 }
 div.what-is {
-	z-index: 10;
+	z-index: 500;
+	position:relative;
 	display:inline;
 	float:right;
 	width:400px;
@@ -47,4 +48,36 @@ div.what-is h1{
 	font-style: normal;
 	text-shadow: black -1px 0px 5px;
 	margin-bottom:.75em;
+}
+div.what-is div.button a{
+	width:150px;
+	display:inline;
+	float:left;
+	margin:1em;
+	text-align:center;
+}
+div.what-is > * {
+	z-index:4 !important;
+}
+#kaltura-content-menu a {
+	color:white;
+}
+.kaltura-front-feed li {
+	margin-bottom:18px;
+}
+.kaltura-front-feed a.read-more {
+	line-height:2em;
+}
+.kaltura-front-feed div.front-time a,
+.kaltura-front-feed div.front-time a:hover
+{
+	color: #f17e21;;
+	font-weight:bold;
+}
+div.front-time {
+	margin-bottom:.5em;
+}
+.kaltura-front-feed-header{
+	color: #666560;
+	margin-bottom: 24px;
 }
