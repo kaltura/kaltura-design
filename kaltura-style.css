@@ -655,3 +655,85 @@ display:inline;
 	float:right;
 	padding-left:.15em;
 }
+.kaltura-solutions {
+	width:270px;
+	height:100px;
+}
+.solutions-container {
+	margin:0 18px;
+}
+.kaltura-solutions h3,
+.kaltura-solutions p,
+.kaltura-solutions a,
+.kaltura-solutions a:hover
+{
+	color:black;
+}
+.kaltura-solutions img,
+.kaltura-solutions img a {
+	position:absolute;
+	z-index: 0;
+}
+.solutions-container {
+	width:270px;
+	height:100px;
+	position:absolute;
+	z-index: 5;
+}
+.kaltura-solutions h3
+{
+	font-size:15px;
+	padding-top:18px;
+}
+.kaltura-solutions span {
+	color:white;
+	font-size:5em;
+	top:-100px;
+}
+.kaltura-solutions span a {
+	position:absolute;
+	padding-left: 215px;
+	line-height: 140px;
+	height:100px;
+	right:22px;
+	z-index: 5;
+}
+.kaltura-solutions span a
+{
+	text-decoration:none;
+	color:white;
+}
+.kaltura-solutions span a:hover
+{
+	color:#ff8c38;
+}
+ul.kaltura-front-connect li{
+	margin-top:24px;
+	min-height:46px;
+}
+ul.kaltura-front-connect li img{
+	display:inline;
+	float:left;
+	clear:none;
+}
+ul.kaltura-front-connect li h2 a {
+	padding-left:16px;
+	color: #666560;
+}
+ul.kaltura-front-connect li h2 a:hover {
+	color:#0fa2bb; 
+}
+ul.kaltura-front-connect li h2 {
+	font-size:16px;
+}
+ul.kaltura-front-connect li p,
+ul.kaltura-front-connect li h3 {
+	font-size:12px;
+	margin:0;
+	padding:0;
+	padding-left:70px;
+	line-height:14px;
+}
+div.twtr-widget {
+	margin-top:24px;
+}

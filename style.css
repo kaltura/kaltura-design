@@ -60,17 +60,17 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -240px 0 0;
+	margin: 0 -270px 0 0;
 	width: 100%;
 }
 #content {
-	margin: 0 280px 0 20px;
+	margin: 0 280px 0 0;
 }
 #primary,
 #secondary {
 	float: right;
 	overflow: hidden;
-	width: 220px;
+	width: 270px;
 }
 #secondary {
 	clear: right;
@@ -1099,7 +1099,7 @@ h3#reply-title {
 }
 .widget-area ul ul {
 	list-style: none;
-	margin-left: 1.3em;
+	margin-left: 0;
 }
 .widget-area select {
 	max-width: 100%;
@@ -1118,14 +1118,10 @@ h3#reply-title {
 	font-weight: bold;
 	font-size: 16px;
 }
+.widget-area a,
 .widget-area a:link,
 .widget-area a:visited {
-	color: #666560;
 	text-decoration: none;
-}
-.widget-area a:active,
-.widget-area a:hover {
-	text-decoration: underline;
 }
 .widget-area .entry-meta {
 	font-size: 11px;
