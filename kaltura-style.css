@@ -656,11 +656,9 @@ display:inline;
 	padding-left:.15em;
 }
 .kaltura-solutions {
-	width:270px;
 	height:100px;
 }
 .solutions-container {
-	margin:0 18px;
 }
 .kaltura-solutions h3,
 .kaltura-solutions p,
@@ -675,10 +673,11 @@ display:inline;
 	z-index: 0;
 }
 .solutions-container {
-	width:270px;
 	height:100px;
+	width: 234px;
 	position:absolute;
 	z-index: 5;
+	margin:0 18px;
 }
 .kaltura-solutions h3
 {
@@ -695,7 +694,6 @@ display:inline;
 	padding-left: 215px;
 	line-height: 140px;
 	height:100px;
-	right:22px;
 	z-index: 5;
 }
 .kaltura-solutions span a
