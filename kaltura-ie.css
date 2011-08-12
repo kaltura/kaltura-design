@@ -1,0 +1,98 @@
+form input[type=submit],
+form input[type=button],
+div.kaltura-button1 a,
+div.kaltura-button2 a,
+div.kaltura-button3 a,
+form input.kaltura-button1,
+form input.kaltura-button2,
+form input.kaltura-button3
+{
+	background-color: #eee;
+	background-image: url('kaltura-images/ie-button1.svg');
+	background-size: 100% 100%;
+}
+form input[type=submit]:hover,
+form input[type=button]:hover,
+div.kaltura-button1 a:hover,
+div.kaltura-button2 a:hover,
+div.kaltura-button3 a:hover,
+form input.kaltura-button1:hover,
+form input.kaltura-button2:hover,
+form input.kaltura-button3:hover
+{
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid #00cdff;
+	color: #00cdff;
+ 	background-image:none;
+}
+div.kaltura-button2 a,
+div.kaltura-button3 a,
+form input.kaltura-button2,
+form input.kaltura-button3 {
+	background-color: #068ea2;
+	background-image: url('kaltura-images/ie-button2.svg');
+	background-size: 100% 100%;
+}
+div.kaltura-button2 a:hover,
+form input.kaltura-button2:hover
+{
+	color: #fff;
+	border: none;
+	background-color: #30aec7;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(.12, #30aec7),
+		color-stop(.88, rgba(0,0,0,.1))
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#30aec7 12%,
+		rgba(0,0,0,.1) 88%%
+	);
+}
+div.kaltura-button3 a,
+form input.kaltura-button3 {
+	background-color: #6fb1fb;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(.12, #6fb1fb),
+		color-stop(.88, rgba(0,0,0,.1))
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#6fb1fb,
+		rgba(0,0,0,.1)
+	);
+}
+div.kaltura-button3 a:hover,
+form input.kaltura-button3:hover
+{
+	color: #fff;
+	border: none;
+	background-color: #92c4fd;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(.12, #92c4fd),
+		color-stop(.88, rgba(0,0,0,.1))
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#92c4fd 12%,
+		rgba(0,0,0,.1) 88%%
+	);
+}
+.kaltura-partners .grid_1 {
+	width: 280px;
+}
+form input[type=radio],
+form input[type=checkbox]
+{
+	border:none;
+}
