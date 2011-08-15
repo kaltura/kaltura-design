@@ -142,7 +142,7 @@ form input.kaltura-button3
 		left 0,
 		left 27,
 		color-stop(0, #fff),
-		color-stop(0.5, #fff),
+		color-stop(0.8, #fff),
 		color-stop(1, #bababa)
 	);
 	background-image: -moz-linear-gradient(
@@ -314,10 +314,14 @@ nav li {
 	top:30px;
 	left:0;
 }
+img {
+	border:none;
+}
 #kaltura-top-menu {
-	position: relative;
+	display:inline;
 	float: right;
-	top:-44px;
+	position:relative;
+	top:-24px;
 	right:0;
 }
 #kaltura-top-menu a
@@ -329,9 +333,10 @@ nav li {
 	margin-left: 1em;	
 }
 #kaltura-masthead-menu {
-	position: relative;
+	display:inline;
 	float: right;
-	top:0;
+	position:relative;
+	top:-10px;
 	right:0
 }
 #kaltura-masthead-menu a
@@ -353,6 +358,7 @@ nav li {
 	background-color: #ff8c38;
 	background: -moz-linear-gradient(30deg, rgb(164,69,26) 0%, #ff8c38 25%, #e36d29 40%, #ff8c38 80%);
 	background: -webkit-linear-gradient(30deg, rgb(164,69,26) 0%, #ff8c38 25%, #e36d29 40%, #ff8c38 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8c38', endColorstr='#A4451A', gradientType='1');
 }
 #kaltura-content-menu {
 	height:54px;
@@ -500,6 +506,7 @@ hr.widget-rule {
 		#71787a,
 		rgba(0,0,0,.25)
 	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#71787a', endColorstr='#222222', gradientType='0');
 }
 #kaltura-footer-remarks
 {
