@@ -52,6 +52,9 @@
 ?>
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/grid.css" />
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-style.css" />
+<!--[if IE]>
+<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-ie.css" />
+<![endif]-->
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -62,15 +65,14 @@
 	<div id="kaltura-logo">
 		<a href="http://html5video.org/"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="60" width="228"></a>
 	</div>
-	<!--
 	<nav id="kaltura-top-menu">
 		<ul>
-			<li><a href="#" class="alwaysunvisited">kaltura.com</a></li>
+			<li><a href="http://kaltura.com/" class="alwaysunvisited">kaltura.com</a></li>
 			<li>|</li>
-			<li><a href="#" class="alwaysunvisited">kaltura.org</a></li>
+			<li><a href="http://kaltura.org/" class="alwaysunvisited">kaltura.org</a></li>
 		</ul>
 	</nav>
-	-->
+	<div class="clear">&nbsp;</div>
 	<nav id="kaltura-masthead-menu">
 		<ul>
 			<!--

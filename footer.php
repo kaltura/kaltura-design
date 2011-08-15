@@ -64,10 +64,7 @@
 	</div>
 </footer>
 
-<!-- jQuery might come in handy
-<script type="text/javascript" src="http://html5video.org/testswarm/mwEmbed/r2244/mwEmbedLoader.php"></script>
--->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script src="http://html5.kaltura.org/js"></script>
 
 <!--
