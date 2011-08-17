@@ -178,18 +178,18 @@ form input.kaltura-button3 {
 	color: #fff;
 	font-weight: bold;
 	padding: .5em;
-	background-color: #068ea2;
+	background-color: #81c5b0;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
-		color-stop(.12, #068ea2),
-		color-stop(.88, rgba(0,0,0,.25))
+		color-stop(.12, #81c5b0),
+		color-stop(.88, rgba(0,0,0,.1))
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#068ea2,
-		rgba(0,0,0,.25)
+		#81c5b0,
+		rgba(0,0,0,.1)
 	);
 }
 div.kaltura-button2 a:hover,
@@ -197,33 +197,33 @@ form input.kaltura-button2:hover
 {
 	color: #fff;
 	border: none;
-	background-color: #30aec7;
+	background-color: #a2cfa9;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
-		color-stop(.12, #30aec7),
+		color-stop(.12, #a2cfa9),
 		color-stop(.88, rgba(0,0,0,.1))
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#30aec7 12%,
+		#a2cfa9 12%,
 		rgba(0,0,0,.1) 88%%
 	);
 }
 div.kaltura-button3 a,
 form input.kaltura-button3 {
-	background-color: #6fb1fb;
+	background-color: #69cae9;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
-		color-stop(.12, #6fb1fb),
+		color-stop(.12, #69cae9),
 		color-stop(.88, rgba(0,0,0,.1))
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#6fb1fb,
+		#69cae9,
 		rgba(0,0,0,.1)
 	);
 }
@@ -232,17 +232,17 @@ form input.kaltura-button3:hover
 {
 	color: #fff;
 	border: none;
-	background-color: #92c4fd;
+	background-color: #76d2ef;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
-		color-stop(.12, #92c4fd),
+		color-stop(.12, #76d2ef),
 		color-stop(.88, rgba(0,0,0,.1))
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#92c4fd 12%,
+		#76d2ef 12%,
 		rgba(0,0,0,.1) 88%%
 	);
 }
@@ -336,7 +336,7 @@ img {
 	float: right;
 	position:relative;
 	top:-10px;
-	right:0
+	right:0;
 }
 #kaltura-masthead-menu a
 {
