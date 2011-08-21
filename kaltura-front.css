@@ -44,21 +44,24 @@ div.what-is {
 }
 div.what-is p {
 	font-weight:normal;
+	text-shadow: none;
 }
 div.what-is h1{
 	color:white;
-	text-align:center;
-	font-style: normal;
-	text-shadow: black -1px 0px 5px;
+	text-align:left;
+	font-family: Georgia, serif;
+	font-style: italic;
+	text-shadow: #82441a 1px 1px 1px;
 	margin-bottom:.75em;
 }
 div.what-is div.button,
 div.what-is div.button a{
-	width:150px;
+	width:110px;
 	display:inline;
 	float:left;
-	margin:0 1em;
+	margin:0 .5em;
 	text-align:center;
+	padding-left: 0;
 }
 div.what-is > * {
 	z-index:4 !important;

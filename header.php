@@ -63,23 +63,23 @@
 <body <?php body_class(); ?>>
 <header id="kaltura-masthead" class="container_3">
 	<div id="kaltura-logo">
-		<a href="http://html5video.org/"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="60" width="228"></a>
+		<a href="../../../../../"><img src="<?php bloginfo( 'template_directory' ); ?>/kaltura-images/html5video-logo.png" height="60" width="228"></a>
 	</div>
 	<nav id="kaltura-top-menu">
 		<ul>
-			<li><a href="http://kaltura.com/" class="alwaysunvisited">kaltura.com</a></li>
+			<li><a href="http://kaltura.com/" class="alwaysunvisited">Kaltura.com</a></li>
 			<li>|</li>
-			<li><a href="http://kaltura.org/" class="alwaysunvisited">kaltura.org</a></li>
+			<li><a href="http://kaltura.org/" class="alwaysunvisited">Kaltura.org</a></li>
 		</ul>
 	</nav>
 	<div class="clear">&nbsp;</div>
 	<nav id="kaltura-masthead-menu">
 		<ul>
 			<!--
-			<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
+			<li><a href="../../../../../EmbedWizard/">Embed Wizard</a></li>
 			-->
-			<li><a href="http://html5video.org/wiki/">Wiki</a></li>
-			<li><a class="selected" href="http://html5video.org/blog/">News</a></li>
+			<li><a href="../../../../../wiki/">Wiki</a></li>
+			<li><a class="news-page-link" href="../../../../../blog/news/">News</a></li>
 			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
 			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
 			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>

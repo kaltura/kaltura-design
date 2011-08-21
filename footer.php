@@ -31,7 +31,7 @@
 			<div class="grid_1">
 				<ul>
 					<li>
-							<a href="http://html5video.org/"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
+							<a href="../../../../../"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
 					</li>
 					<li>
 							<a href="http://corp.kaltura.com/"><img alt="Kaltura" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" /></a>
