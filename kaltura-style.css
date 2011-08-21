@@ -306,8 +306,9 @@ nav li {
 	float: left;
 	margin: 0 0.15em;
 }
-#kaltura-masthead ul {
-	line-height:1.5em;
+#kaltura-masthead {
+	position:relative;
+	height:108px;
 }
 #kaltura-logo {
 	position:relative;
@@ -320,8 +321,8 @@ img {
 #kaltura-top-menu {
 	display:inline;
 	float: right;
-	position:relative;
-	top:-28px;
+	position:absolute;
+	top:42px;
 	right:0;
 }
 #kaltura-top-menu a
@@ -335,8 +336,8 @@ img {
 #kaltura-masthead-menu {
 	display:inline;
 	float: right;
-	position:relative;
-	top:-10px;
+	position:absolute;
+	top:72px;
 	right:0;
 }
 #kaltura-masthead-menu a
