@@ -181,8 +181,8 @@ form input.kaltura-button3 {
 		linear,
 		left top,
 		left bottom,
-		color-stop(.12, #81c5b0),
-		color-stop(.88, rgba(0,0,0,.1))
+		color-stop(0, #81c5b0),
+		color-stop(1, rgba(0,0,0,.1))
 	);
 	background-image: -moz-linear-gradient(
 		center top,
@@ -205,8 +205,8 @@ form input.kaltura-button2:hover
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#a2cfa9 12%,
-		rgba(0,0,0,.1) 88%%
+		#a2cfa9,
+		rgba(0,0,0,.1)
 	);
 }
 div.kaltura-button3 a,
@@ -240,8 +240,8 @@ form input.kaltura-button3:hover
 	);
 	background-image: -moz-linear-gradient(
 		center top,
-		#76d2ef 12%,
-		rgba(0,0,0,.1) 88%%
+		#76d2ef,
+		rgba(0,0,0,.1)
 	);
 }
 
