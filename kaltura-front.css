@@ -55,13 +55,17 @@ div.what-is h1{
 	margin-bottom:.75em;
 }
 div.what-is div.button,
-div.what-is div.button a{
+div.what-is div.button a
+{
 	width:110px;
 	display:inline;
 	float:left;
-	margin:0 .5em;
 	text-align:center;
-	padding-left: 0;
+	margin-right:1em;
+	margin-left:0;
+	height:18px;
+	position:relative;
+	left:-4px;
 }
 div.what-is > * {
 	z-index:4 !important;
