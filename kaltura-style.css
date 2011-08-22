@@ -103,14 +103,14 @@ form textarea {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding:.25em;
+	padding:0;
 }
 div.kaltura-button1,
 div.kaltura-button2,
 div.kaltura-button3
 {
 	margin:.25em;
-	padding:.5em;
+	padding:0;
 }
 div.kaltura-button1 a:hover,
 div.kaltura-button2 a:hover,
