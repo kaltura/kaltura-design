@@ -128,7 +128,6 @@ form input.kaltura-button2,
 form input.kaltura-button3
 {
 	font-weight: bold;
-	margin: .25em;
 	padding: .5em;
 	border: none;
 	-moz-border-radius: 5px;
@@ -177,7 +176,6 @@ form input.kaltura-button3 {
 	-webkit-border-radius: 5px;
 	color: #fff;
 	font-weight: bold;
-	padding: .5em;
 	background-color: #81c5b0;
 	background-image: -webkit-gradient(
 		linear,
