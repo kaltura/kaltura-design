@@ -132,3 +132,14 @@ div.front-time {
 	color: #666560;
 	margin-bottom: 24px;
 }
+#twtr-widget-1 .twtr-tweet a
+{
+       text-decoration: none !important;
+       color: #0fa2bb !important;
+       background: none;
+}
+#twtr-widget-1 .twtr-tweet a:hover
+{
+      color: #00cdff !important;
+      text-decoration: none !important;
+}
