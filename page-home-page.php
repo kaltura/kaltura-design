@@ -100,11 +100,11 @@ Template Name: Home Page
 				The HTML5 standard includes many new features for more dynamic web applications and interfaces. One such component being specified and implemented is the &lt;video&gt; element.
 			</p>
 			<p> Using an HTML5 Javascript Library, your videos can be played back on the latest mobile devices and even on older browsers that require Flash.</p>
-			<div class="kaltura-button2 button">
-				<a href="http://staging.html5video.org/wiki/Kaltura_Javascript_Installation">Get Started</a>
+			<div class="kaltura-button-front2 button">
+				<a href="http://staging.html5video.org/wiki/Kaltura_Javascript_Installation"><span>Get started</span></a>
 			</div>
-			<div class="kaltura-button3 button">
-				<a target="_blank" href="http://site.kaltura.com/HTML5Video.orgContactUs.html">Contact Us</a>
+			<div class="kaltura-button-front3 button">
+				<a target="_blank" href="http://site.kaltura.com/HTML5Video.orgContactUs.html"><span>Contact us</span></a>
 			</div>
 		</div>
 		<div id="kaltura-content-menu-shapes"></div>
