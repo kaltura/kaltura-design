@@ -12,7 +12,7 @@ Template Name: Home Page
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	/*
-	 * Print the <title> tag based on what is being viewed.
+	 * Print the <title> tag based on what is being viewed. test 
 	 */
 	global $page, $paged;
 
@@ -77,18 +77,20 @@ Template Name: Home Page
 			<!--
 			<li><a href="../../EmbedWizard/">Embed Wizard</a></li>
 			-->
+			<li><a class="player-comparison" href="http://html5video.org/wiki/HTML5_Player_Comparison">HTML5 Player Comparison</a></li>
+			<li><a class="html5-demos" href="http://html5video.org/blog/html5_demos/">HTML5 Demos</a></li>
 			<li><a href="../../wiki/">Wiki</a></li>
 			<li><a href="../../blog/news/">News</a></li>
-			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
-			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
-			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
+			<li><a target="_blank" href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
+			<li><a target="_blank" href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
+			<li><a target="_blank" href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
 		</ul>
 	</nav>
 </header>
 <div class="clear">&nbsp;</div>
 <header id="kaltura-content-menu-header">
 	<div id="kaltura-content-menu" class="container_3">
-<!-- <iframe src="http://html5.kaltura.org/mwEmbedFrame.php/wid/_322481/entry_id/1_4ctagbm9/"> -->
+<!-- <iframe style="width:480px;height:270px" src="http://html5.kaltura.org/mwEmbedFrame.php/wid/_322481/entry_id/1_4ctagbm9/"> -->
 		<div id="kaltura-video">&nbsp;</div>
 		<div id="video-credit"><span><a href="http://www.sitasingstheblues.com/">Sita Sings the Blues</a> by Nina Paley</span></div>
 		<div class="what-is">
@@ -101,7 +103,7 @@ Template Name: Home Page
 			</p>
 			<p> Using an HTML5 Javascript Library, your videos can be played back on the latest mobile devices and even on older browsers that require Flash.</p>
 			<div class="kaltura-button-front2 button">
-				<a href="http://staging.html5video.org/wiki/Kaltura_Javascript_Installation"><span>Get started</span></a>
+				<a href="http://html5video.org/wiki/Getting_Started_-_Navigating_HTML5"><span>Getting Started</span></a>
 			</div>
 			<div class="kaltura-button-front3 button">
 				<a target="_blank" href="http://site.kaltura.com/HTML5Video.orgContactUs.html"><span>Contact us</span></a>
@@ -115,7 +117,7 @@ Template Name: Home Page
 	<div class="container_3">
 		<div class="grid_1 kaltura-front-feed">
 			<h2 class="kaltura-front-feed-header">HTML5 News</h2>
-			<?php global $post; $myposts = get_posts('category_name=news&numberposts=7'); ?>
+			<?php global $post; $myposts = get_posts('category_name=news&numberposts=5'); ?>
 			<ul class="posts">
 			<?php foreach($myposts as $post): ?>
 			<?php setup_postdata($post); ?>
@@ -127,11 +129,11 @@ Template Name: Home Page
 				</li>
 			<?php endforeach; ?>
 			</ul>
-			<div class="kaltura-button1"><a href="news">More news &raquo;</a></div>
+			<div class="kaltura-button1"><a href="../../../blog/news/">More news &raquo;</a></div>
 		</div>
 		<div class="grid_1 kaltura-front-feed">
 			<h2 class="kaltura-front-feed-header">Recent Blog Posts</h2>
-			<?php global $post; $myposts = get_posts('cat=-4&numberposts=5'); ?>
+			<?php global $post; $myposts = get_posts('cat=-4&numberposts=4'); ?>
 			<ul class="posts">
 			<?php foreach($myposts as $post): ?>
 			<?php setup_postdata($post); ?>
@@ -144,7 +146,7 @@ Template Name: Home Page
 				</li>
 			<?php endforeach; ?>
 			</ul>
-			<div class="kaltura-button1"><a href="news">More posts &raquo;</a></div>
+			<div class="kaltura-button1"><a href="../../../blog/">More posts &raquo;</a></div>
 		</div>
 		<div class="grid_1 kaltura-front-sidebar">
 			<?php get_sidebar(); ?>

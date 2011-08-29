@@ -27,7 +27,8 @@
 	z-index: 0;
 }
 #kaltura-logo,
-#kaltura-masthead-menu
+#kaltura-masthead-menu,
+#kaltura-top-menu
 {
 	z-index: 500;
 }
@@ -54,18 +55,23 @@ div.what-is h1{
 	text-shadow: #82441a 1px 1px 1px;
 	margin-bottom:.75em;
 }
+div.what-is div.button
+{
+	margin-right:1em;
+}
 div.what-is div.button,
 div.what-is div.button a
 {
-	width:153px;
+	width:151px;
 	display:inline;
 	float:left;
 	text-align:center;
 	margin:0;
-	margin-right:1em;
 	padding:0;
-	height:52px;
+	height:46px;
 	position:relative;
+	font-size: 16px;
+	overflow:hidden;
 }
 div.what-is div.button span
 {
@@ -79,19 +85,27 @@ div.what-is div.button a
 }
 div.what-is div.kaltura-button-front2 a
 {
-	background-image: url(kaltura-images/button_green.png);
+	background-image: url(kaltura-images/greenbtn.png);
+	background-position:0 0;
+	background-repeat:none;
 }
 div.what-is div.kaltura-button-front2 a:hover
 {
-	background-image: url(kaltura-images/button_green_hover.png);
+	background-image: url(kaltura-images/greenbtn.png);
+	background-position:0 -46px;
+	background-repeat:none;
 }
 div.what-is div.kaltura-button-front3 a
 {
-	background-image: url(kaltura-images/button_blue.png);
+	background-image: url(kaltura-images/bluebtn.png);
+	background-position:0 0;
+	background-repeat:none;
 }
 div.what-is div.kaltura-button-front3 a:hover
 {
-	background-image: url(kaltura-images/button_blue_hover.png);
+	background-image: url(kaltura-images/bluebtn.png);
+	background-position:0 -46px;
+	background-repeat:none;
 }
 div.what-is > * {
 	z-index:4 !important;
@@ -141,5 +155,4 @@ div.front-time {
 #twtr-widget-1 .twtr-tweet a:hover
 {
       color: #00cdff !important;
-      text-decoration: none !important;
 }

@@ -78,11 +78,13 @@
 			<!--
 			<li><a href="../../../../../EmbedWizard/">Embed Wizard</a></li>
 			-->
+			<li><a class="player-comparison" href="http://html5video.org/wiki/HTML5_Player_Comparison">HTML5 Player Comparison</a></li>
+			<li><a class="html5-demos" href="http://html5video.org/blog/html5_demos/">HTML5 Demos</a></li>
 			<li><a href="../../../../../wiki/">Wiki</a></li>
 			<li><a class="news-page-link" href="../../../../../blog/news/">News</a></li>
-			<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
-			<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
-			<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
+			<li><a target="_blank" href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
+			<li><a target="_blank" href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
+			<li><a target="_blank" href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
 		</ul>
 	</nav>
 </header>

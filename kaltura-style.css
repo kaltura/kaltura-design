@@ -110,7 +110,6 @@ div.kaltura-button2,
 div.kaltura-button3
 {
 	margin:0;
-	padding:.5em;
 }
 div.kaltura-button1 a:hover,
 div.kaltura-button2 a:hover,
@@ -361,7 +360,7 @@ img {
 }
 #kaltura-content-menu {
 	height:54px;
-	font-size: 1.1em;
+	font-size: 13.2px;
 	text-shadow: rgba(0, 0, 0, .2) -1px -1px 1px;
     color: white;
 	font-weight:bold;
@@ -739,9 +738,6 @@ ul.kaltura-front-connect li h3 {
 	padding-left:70px;
 	line-height:14px;
 }
-div.twtr-widget {
-	margin-top:24px;
-}
 #kaltura-masthead-menu a.selected
 {
     color: #E34C26;
@@ -753,4 +749,16 @@ div.twtr-widget {
 	background-position:center bottom;
 	padding-bottom:20px;
 	*/
+}
+ol li {
+list-style: decimal;
+list-style-position: inside;
+}
+
+.page-id-6 #kaltura-masthead-menu a.html5-demos,
+.page-id-6 #kaltura-masthead-menu a.html5-demos:hover
+{
+    color: #E34C26;
+	font-weight: bold;
+	text-decoration: underline;
 }

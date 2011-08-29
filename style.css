@@ -437,9 +437,9 @@ div.menu li {
 }
 #content
 {
-	color: #333;
-	font-size: 12px;
-	line-height: 18px;
+	color: #666560;
+	font-size: 13px;
+	line-height: 1.5em;
 }
 #content p,
 #content ul,
