@@ -55,10 +55,6 @@ div.what-is h1{
 	text-shadow: #82441a 1px 1px 1px;
 	margin-bottom:.75em;
 }
-div.what-is div.button
-{
-	margin-right:1em;
-}
 div.what-is div.button,
 div.what-is div.button a
 {
@@ -72,6 +68,10 @@ div.what-is div.button a
 	position:relative;
 	font-size: 16px;
 	overflow:hidden;
+}
+div.what-is div.button
+{
+	margin-right:1em;
 }
 div.what-is div.button span
 {
