@@ -379,6 +379,7 @@ img {
 {
     color: #3b3b3b;
 	font-weight: bold;
+	text-shadow: none;
 	/* no background right now
 	background: url(kaltura-images/content-menu-hover.png);
 	background-repeat:no-repeat;
