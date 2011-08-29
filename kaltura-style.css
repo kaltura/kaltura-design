@@ -561,13 +561,19 @@ img {
 .kaltura-partners img {
 	margin:0 1em;
 }
-.kaltura-partners {
+.kaltura-partners img.footer-html5-logo {
+	position: relative;
+	top:9px;
+}
+.kaltura-partners img.footer-mozilla-logo {
+	position: relative;
+	top:15px;
 }
 .kaltura-partners .grid_1 {
-	width: 265px;
+	width: 300px;
 }
 .kaltura-partners .grid_2 {
-	width: 600px;
+	width: 580px;
 }
 .kaltura-vertical-rule {
 	display:inline;
