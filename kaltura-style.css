@@ -301,7 +301,7 @@ nav ul {
 }
 nav li {
 	float: left;
-	margin: 0 0.15em;
+	margin: 0 .75em;
 }
 #kaltura-masthead {
 	position:relative;
