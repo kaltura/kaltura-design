@@ -586,13 +586,19 @@ hr.widget-rule {
 .kaltura-partners img {
 	margin:0 1em;
 }
-.kaltura-partners {
+.kaltura-partners img.footer-html5-logo {
+	position: relative;
+	top:9px;
+}
+.kaltura-partners img.footer-mozilla-logo {
+	position: relative;
+	top:15px;
 }
 .kaltura-partners .grid_1 {
-	width: 270px;
+	width: 300px;
 }
 .kaltura-partners .grid_2 {
-	width: 600px;
+	width: 540px;
 }
 .kaltura-vertical-rule {
 	display:inline;
@@ -677,13 +683,13 @@ display:inline;
 .kaltura-solutions img,
 .kaltura-solutions img a {
 	position:absolute;
-	z-index: 0;
+	z-index: -2;
 }
 .solutions-container {
 	height:100px;
 	width: 234px;
 	position:absolute;
-	z-index: 5;
+	z-index: 0;
 	margin:0 18px;
 }
 .kaltura-solutions h3
@@ -701,7 +707,7 @@ display:inline;
 	padding-left: 215px;
 	line-height: 140px;
 	height:100px;
-	z-index: 5;
+	z-index: 0;
 }
 .kaltura-solutions span a
 {
@@ -750,6 +756,19 @@ ul.kaltura-front-connect li h3 {
 	background-position:center bottom;
 	padding-bottom:20px;
 	*/
+}
+#twtr-widget-1 .twtr-tweet a
+{
+       text-decoration: none !important;
+       color: #0fa2bb !important;
+       background: none;
+}
+#twtr-widget-1 .twtr-tweet a:hover
+{
+      color: #00cdff !important;
+}
+.twtr-timeline {
+z-index: 0 !important;
 }
 ol li {
 list-style: decimal;

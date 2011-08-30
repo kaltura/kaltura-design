@@ -6,12 +6,12 @@
 #kaltura-video {
 	position:absolute;
 	top:150px;
-	z-index: 2;
+	z-index: 500;
 }
 #video-credit {
 	position:absolute;
 	top:420px;
-	z-index:3;
+	z-index: 0;
 }
 #kaltura-content-menu-shapes {
 	display: block;
@@ -20,20 +20,21 @@
 	width: 960px;
 	height: 360px;
 	overflow-y: hidden
-	z-index: -1;
+	overflow-x: hidden
 }
 #kaltura-content-menu-shapes img {
 	position: absolute;
-	z-index: 0;
+	z-index: 10 !important;
 }
 #kaltura-logo,
 #kaltura-masthead-menu,
 #kaltura-top-menu
 {
-	z-index: 500;
+	position:absolute;
+	z-index: 0;
 }
 div.what-is {
-	z-index: 500;
+	z-index: 0;
 	position:relative;
 	display:inline;
 	float:right;
@@ -107,9 +108,6 @@ div.what-is div.kaltura-button-front3 a:hover
 	background-position:0 -46px;
 	background-repeat:none;
 }
-div.what-is > * {
-	z-index:4 !important;
-}
 #video-credit span,
 #video-credit span a,
 #video-credit span a:hover
@@ -145,14 +143,4 @@ div.front-time {
 .kaltura-front-feed-header{
 	color: #666560;
 	margin-bottom: 24px;
-}
-#twtr-widget-1 .twtr-tweet a
-{
-       text-decoration: none !important;
-       color: #0fa2bb !important;
-       background: none;
-}
-#twtr-widget-1 .twtr-tweet a:hover
-{
-      color: #00cdff !important;
 }

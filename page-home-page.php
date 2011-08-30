@@ -184,7 +184,7 @@ Template Name: Home Page
 			<div class="grid_1">
 				<ul>
 					<li>
-							<a href="../../"><img alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
+							<a href="../../"><img class="footer-html5-logo" alt="HTML5 Video" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/html5video-logo-footer.png" /></a>
 					</li>
 					<li>
 							<a href="http://corp.kaltura.com/"><img alt="Kaltura" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/kaltura-footer-logo.png" /></a>
@@ -201,7 +201,7 @@ Template Name: Home Page
 							<a href="http://www.wikimedia.org/"><img alt="Wikimedia" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/wikimedia-logo.png" /></a>
 					</li>
 					<li>
-							<a href="http://www.mozilla.org/"><img alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
+							<a href="http://www.mozilla.org/"><img class="footer-mozilla-logo" alt="Mozilla" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/mozilla-logo.png" /></a>
 					</li>
 					<li>
 							<a href="http://openvideoalliance.org/"><img alt="The Open Video Alliance" src="<?php bloginfo( 'template_url' ); ?>/kaltura-images/ova-logo.png" /></a>
@@ -283,7 +283,7 @@ Template Name: Home Page
 				$('#kaltura-content-menu-shapes').append('<img id="topShape" src="<?php bloginfo( "template_directory" ); ?>/kaltura-images/html5-badge-shape.svg" />');
 					$('#topShape').css({'width' : '70%' , 'height' : '70%', 'position' : 'absolute', 'opacity' : .12, 'top' : '100px', 'left' : '591px' });
 				$('#topShape').plaxify({"xRange":20,"yRange":20, "invert":true});
-				$.plax.enable();
+				//$.plax.enable();
 			});
 		</script>
 		<!--

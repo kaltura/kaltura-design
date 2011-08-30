@@ -36,7 +36,6 @@
   })
 
   // Public Methods
-	console.log("WHAT###");
   $.fn.plaxify = function (params){
 
     return this.each(function () {
