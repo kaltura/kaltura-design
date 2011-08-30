@@ -628,3 +628,8 @@ display:inline;
 	float:right;
 	padding-left:.15em;
 }
+div.kaltura-share {
+float:right;
+display:inline;
+margin-right: 64px;
+}
