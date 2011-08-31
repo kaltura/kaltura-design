@@ -506,7 +506,7 @@ function twentyten_posted_in() {
 	);
 }
 endif;
-
+/*
 add_action('init', 'setup_demo_post_type');
 function setup_demo_post_type() 
 {
@@ -538,6 +538,7 @@ function setup_demo_post_type()
         register_post_type('demo',$args);
         register_taxonomy_for_object_type('post_tag', 'demo');
 }
+*/
 
 function new_excerpt_more($more) {
 	       global $post;

@@ -90,8 +90,8 @@ Template Name: Home Page
 <div class="clear">&nbsp;</div>
 <header id="kaltura-content-menu-header">
 	<div id="kaltura-content-menu" class="container_3">
-<!-- <iframe style="width:480px;height:270px" src="http://html5.kaltura.org/mwEmbedFrame.php/wid/_322481/entry_id/1_4ctagbm9/"> -->
-		<div id="kaltura-video">&nbsp;</div>
+		<div id="kaltura-video" style="width:480px;height:302px"></div>
+
 		<div id="video-credit"><span><a href="http://www.sitasingstheblues.com/">Sita Sings the Blues</a> by Nina Paley</span></div>
 		<div class="what-is">
 			<h1>What is HTML5 Video?</h1>
@@ -218,44 +218,15 @@ Template Name: Home Page
 	</div>
 </footer>
 
-<!-- jQuery might come in handy
-<script type="text/javascript" src="http://html5video.org/testswarm/mwEmbed/r2244/mwEmbedLoader.php"></script>
--->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://html5.kaltura.org/js"></script>
 <script>
-	mw.setConfig('EmbedPlayer.EnableIpadHTMLControls', true );
-</script>
-<script src="<?php bloginfo( 'template_url' ); ?>/js/plax.js"></script>
-<script type="text/javascript">
-  mw.ready( function(){
-    $j( '#kaltura-video' ).loadingSpinner();
-    mw.load( 'EmbedPlayer', function(){
-      $j( '#kaltura-video' ).html(
-        $j('<video />')
-           .css({
-             'width' : 480,
-             'height' : 270
-           })
-          .attr({
-             'kentryid' : "1_4ctagbm9", //galleryClips[videoId].entryId,
-             'kwidgetid' : "_322481", //kWidgetId,
-             'kpartnerid' : "32248" //kPartnerId
-          })
-.html(
-	$j('<track />')
-		.attr({
-			'kind' : "subtitle",
-			'srclang' : "en",
-			'src' : "http://staging.html5video.org/media/sita.srt"
-		})
-	)
-			
-     );
-     // Rewrite all the players on the page
-     $j.embedPlayers();
-   });
- });
+	mw.setConfig("forceMobileHTML5", true);
+	kalturaIframeEmbed( 'kaltura-video', { 
+		'wid' : '_243342', 
+		'uiconf_id' : '5349042', 
+		'entry_id' : '0_ntovmku5'
+	});
 </script>
 	<script type="text/javascript">
 			// let's make some pretty shields in the background of the top highlight area
@@ -283,7 +254,7 @@ Template Name: Home Page
 				$('#kaltura-content-menu-shapes').append('<img id="topShape" src="<?php bloginfo( "template_directory" ); ?>/kaltura-images/html5-badge-shape.svg" />');
 					$('#topShape').css({'width' : '70%' , 'height' : '70%', 'position' : 'absolute', 'opacity' : .12, 'top' : '100px', 'left' : '591px' });
 				$('#topShape').plaxify({"xRange":20,"yRange":20, "invert":true});
-				//$.plax.enable();
+				$.plax.enable();
 			});
 		</script>
 		<!--

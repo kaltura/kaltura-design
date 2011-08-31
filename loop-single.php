@@ -17,16 +17,29 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-				<div id="nav-above" class="navigation">
-					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentyten' ) . '</span> %title' ); ?></div>
-					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '</span>' ); ?></div>
-				</div><!-- #nav-above -->
-
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 
 					<div class="entry-meta">
 						<?php twentyten_posted_on(); ?>
+						<div class="kaltura-share">
+							<!-- Place this tag where you want the +1 button to render -->
+							<g:plusone size="medium" annotation="none"></g:plusone>
+
+							<!-- Place this render call where appropriate -->
+							<script type="text/javascript">
+							  (function() {
+							    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+							    po.src = 'https://apis.google.com/js/plusone.js';
+							    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+							  })();
+							</script>
+							<a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+							<div style="display:inline;float:right;width:80px;margin-left:3px">
+								<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=131893820239985&xfbml=1"></script><fb:like href="" send="false" layout="button_count" width="80" show_faces="false" font=""></fb:like>
+							</div>
+						</div>
+
 					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
