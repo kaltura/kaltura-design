@@ -781,8 +781,12 @@ list-style-position: inside;
     color: #E34C26;
 	font-weight: bold;
 	text-decoration: underline;
+}
 div.kaltura-share {
 float:right;
 display:inline;
-margin-right: 64px;
+}
+#LikePluginPagelet {
+position:relative !important;
+top:-40px !important;
 }
