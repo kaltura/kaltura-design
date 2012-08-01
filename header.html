@@ -1,29 +1,44 @@
 		<section id="site-header">
-			<div class="kaltura-masthead container_3">
-				<div id="kaltura-logo">
-					<a href="http://html5video.org/">
-						<img src="kaltura-images/html5video-logo.png" height="64" width="283">
-					</a>
-				</div>
-				<div class="clear">&nbsp;</div>
-				<div id="kaltura-top-menu">
-					<nav>
-						<ul>
-							<li>
+			<div class="kaltura-masthead container">
+				<div class="row">
+					<div class="kaltura-logo span4">
+						<a href="http://html5video.org/">
+							<img src="kaltura-images/html5video-logo.png" height="64" width="283">
+						</a>
+					</div>
+					<div class="span8">
+						<div class="kaltura-top-menu">
+							<ul class="breadcrumb pull-right">
+								<li>
 								<a href="#" class="alwaysunvisited">kaltura.com</a>
-								<span class="divider">|</span><!-- TODO move this to css -->
-							</li>
-							<li>
+								<span class="divider">|</span>
+								</li>
+								<li>
 								<a href="#" class="alwaysunvisited">kaltura.org</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pull-right">
+						<ul class="kaltura-menu nav nav-tabs pull-right">
+							<li class="dropdown active">
+							<a class="dropdown-toggle"
+								data-toggle="dropdown"
+								href="#">
+								Dropdown
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- links -->
+								<li class="active"><a class="selected" href="http://staging.html5video.org/kaltura-design/inner_template.html">Wireframe</a></li>
+								<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
+								<li><a href="http://html5video.org/wiki/">Wiki</a></li>
+								<li><a href="http://html5video.org/blog/">Blog</a></li>
+								<li><a href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
+								<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
+							</ul>
 							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="clear">&nbsp;</div>
-				<div id="kaltura-masthead-menu">
-					<nav>
-						<ul>
-							<li><a class="selected" href="http://staging.html5video.org/kaltura-design/inner_template.html">Wireframe</a></li>
+							<li class="active"><a class="selected" href="http://staging.html5video.org/kaltura-design/inner_template.html">Wireframe</a></li>
 							<li><a href="http://html5video.org/EmbedWizard/">Embed Wizard</a></li>
 							<li><a href="http://html5video.org/wiki/">Wiki</a></li>
 							<li><a href="http://html5video.org/blog/">Blog</a></li>
@@ -31,27 +46,19 @@
 							<li><a href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
 							<li><a href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
 						</ul>
-					</nav>
+					</div>
 				</div>
-				<div class="clear">&nbsp;</div>
-				<div id="kaltura-content-menu-header" width="100%">
-					<nav id="kaltura-content-menu" class="container_3">
-						<ul>
-							<li><a href="#" class="selected">Selected</a></li>
-							<li>|</li>
-							<li><a href="#">Application</a></li>
-							<li>|</li>
-							<li><a href="#">Specific</a></li>
-							<li>|</li>
-							<li><a href="#">Links</a></li>
-							<li>|</li>
-							<li><a href="#">Go</a></li>
-							<li>|</li>
-							<li><a href="#">Here</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="clear">&nbsp;</div>
 			</div>
-			<div class="clear">&nbsp;</div>
+			<div id="kaltura-content-menu-header">
+				<div class="container">
+					<ul class="content-menu nav nav-pills pull-left">
+						<li class="active"><a href="#" >Selected</a></li>
+						<li><a href="#">Application</a></li>
+						<li><a href="#">Specific</a></li>
+						<li><a href="#">Links</a></li>
+						<li><a href="#">Go</a></li>
+						<li><a href="#">Here</a></li>
+					</ul>
+				</div>
+			</div>
 		</section>
