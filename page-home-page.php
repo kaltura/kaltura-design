@@ -10,27 +10,7 @@ Template Name: Home Page
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed. test 
-	 */
-	global $page, $paged;
-
-	wp_title( '|', true, 'right' );
-
-	// Add the blog name.
-	bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
-
-	?></title>
+<title>HTML5Video.org - HTML5 Video Library & Web Video Developer Community</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -50,9 +30,9 @@ Template Name: Home Page
 ?>
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/grid.css" />
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-style.css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-front.css" />
+<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-front.css?v=0" />
 <!--[if IE]>
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-ie.css" />
+<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/kaltura-ie.css?v=0" />
 <![endif]-->
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -78,12 +58,12 @@ Template Name: Home Page
 			<li><a href="../../EmbedWizard/">Embed Wizard</a></li>
 			-->
 			<li><a class="player-comparison" href="http://html5video.org/wiki/HTML5_Player_Comparison">HTML5 Player Comparison</a></li>
-			<li><a class="html5-demos" href="http://html5video.org/blog/html5_demos/">HTML5 Demos</a></li>
+			<li><a class="html5-demos" href="http://html5video.org/wiki/HTML5_Demos">HTML5 Demos</a></li>
 			<li><a href="../../wiki/">Wiki</a></li>
 			<li><a href="../../blog/news/">News</a></li>
 			<li><a target="_blank" href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
-			<li><a target="_blank" href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
-			<li><a target="_blank" href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
+			<li><a target="_blank" href="https://github.com/kaltura/mwEmbed/issues">Bug Tracker</a></li>
+			<li><a target="_blank" href="https://github.com/kaltura/mwEmbed">Code</a></li>
 		</ul>
 	</nav>
 </header>
@@ -94,16 +74,12 @@ Template Name: Home Page
 
 		<div id="video-credit"><span><a href="http://www.sitasingstheblues.com/">Sita Sings the Blues</a> by Nina Paley</span></div>
 		<div class="what-is">
-			<h1>What is HTML5 Video?</h1>
-			<p>
-				HTML5 is a set of web standards being developed by the "Web Hypertext Application Technology Working Group"
-			</p>
-			<p>
-				The HTML5 standard includes many new features for more dynamic web applications and interfaces. One such component being specified and implemented is the &lt;video&gt; element.
-			</p>
-			<p> Using an HTML5 Javascript Library, your videos can be played back on the latest mobile devices and even on older browsers that require Flash.</p>
+<h1>What is HTML5 Video?</h1>
+<p>HTML5 Enables Web Pages to playback and manipulate video and audio across platforms and devices - powering amazing rich-media applications that work everywhere.  HTML5video.org is an online community of web developers and the home of the Kaltura open source video player Javascript library.</p>
+<p>
+Stay tuned with <a href="http://html5video.org/blog/news/">the latest developments in HTML5</a>, <a href="http://html5video.org/wiki/Getting_Started_with_Kaltura_HTML5">Add HTML5 Video to your site</a>, Find help in <a href="http://www.kaltura.org/forums/html5-video/html5-video">the forums</a>, <a target="_blank" href="https://github.com/kaltura/mwEmbed">contribute to the HTML5 Video Player Library</a>, and <a target="_blank" href="http://www.meetup.com/how-to-javascript/">meet with other HTML5 developers</a></p>
 			<div class="kaltura-button-front2 button">
-				<a href="http://html5video.org/wiki/Getting_Started_-_Navigating_HTML5"><span>Getting Started</span></a>
+				<a href="http://html5video.org/wiki/Getting_Started_with_Kaltura_HTML5"><span>Getting Started</span></a>
 			</div>
 			<div class="kaltura-button-front3 button">
 				<a target="_blank" href="http://site.kaltura.com/HTML5Video.orgContactUs.html"><span>Contact us</span></a>
@@ -218,90 +194,20 @@ Template Name: Home Page
 	</div>
 </footer>
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <script src="http://html5.kaltura.org/js"></script>
+<!--
+<script src="http://www.kaltura.org/apis/stagingHtml5lib/mwEmbedLoader.php"></script>
+-->
 <script>
-	mw.setConfig("forceMobileHTML5", true);
-	kalturaIframeEmbed( 'kaltura-video', { 
+	mw.setConfig( 'KalturaSupport.LeadWithHTML5', true);
+	kWidget.embed({
+		'targetId':  'kaltura-video',
 		'wid' : '_243342', 
 		'uiconf_id' : '5349042', 
 		'entry_id' : '0_ntovmku5'
 	});
 </script>
-	<script type="text/javascript">
-			// let's make some pretty shields in the background of the top highlight area
-			$(document).ready(function () {
-				var numberOfShapes = 6,
-				maxShapeSize = .6,
-				minShapeSize = 0.05,
-				maxRange = 120,
-				width = 1000,
-				height = 400;
-				
-				var shapeSizeFactor = ( maxShapeSize - minShapeSize ) / numberOfShapes;
-				var rangeSizeFactor = maxRange / numberOfShapes;
-				for (i=1;i<=numberOfShapes;i++) 
-				{	
-					parallax = maxRange - Math.floor( ( i * rangeSizeFactor ) );
-					size = 100 * ( minShapeSize + ( i * shapeSizeFactor ));
-					size = size+"%";
-					xpos = 960 - Math.floor(Math.random()*width);
-					ypos = 360 - Math.floor(Math.random()*height);
-					$('#kaltura-content-menu-shapes').prepend('<img id="shape'+i+'" src="<?php bloginfo( "template_directory" ); ?>/kaltura-images/html5-badge-shape.svg" />');
-					$('#shape'+i).css({'width' : size , 'height' : size, 'position' : 'absolute', 'opacity' : .02 + Math.random()*.15, 'top' : ypos, 'left' : xpos });
-					$('#shape'+i).plaxify({"xRange":10+parallax,"yRange":10+parallax});
-				}
-				$('#kaltura-content-menu-shapes').append('<img id="topShape" src="<?php bloginfo( "template_directory" ); ?>/kaltura-images/html5-badge-shape.svg" />');
-					$('#topShape').css({'width' : '70%' , 'height' : '70%', 'position' : 'absolute', 'opacity' : .12, 'top' : '100px', 'left' : '591px' });
-				$('#topShape').plaxify({"xRange":20,"yRange":20, "invert":true});
-				$.plax.enable();
-			});
-		</script>
-		<!--
-		<script type="text/javascript">
-		function stayUpdated() {
-			var url = "<?php echo site_url('/wp-content/plugins/email_plugin/register.php'); ?>";
-			var $email = jQuery('input[name=stay-updated-email]');
-			if ($email.attr('disabled'))
-				return false;
-			if ($email.val().indexOf('@') == -1) {
-				$email.addClass('invalid');
-				return false;
-			}
-			var email = $email.val();
-			$email.removeClass('invalid');
-			$email.val('Please wait...');
-			$email.attr('disabled', true);
-			jQuery.ajax({
-				url: url,
-				data: { email: email },
-				success: function (data) {
-					if (data != 'ok') {
-						this.error();
-						return;
-					}
-					
-					$email.val('Email submitted successfully!');
-				},
-				error: function () {
-					$email.val(email);
-					$email.removeAttr('disabled');
-					alert('An error occured, please try again');
-				}
-			});
-
-			return false;
-		}
-		</script>
-		-->
-<!--
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
--->
 
 <?php
 	/* Always have wp_footer() just before the closing </body>

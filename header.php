@@ -83,8 +83,8 @@
 			<li><a href="../../../../../wiki/">Wiki</a></li>
 			<li><a class="news-page-link" href="../../../../../blog/news/">News</a></li>
 			<li><a target="_blank" href="http://www.kaltura.org/forums/html5-video/html5-video">Forum</a></li>
-			<li><a target="_blank" href="http://www.kaltura.org/project/issues/2720">Bug Tracker</a></li>
-			<li><a target="_blank" href="http://code.html5video.org/projects/html5video/repository/show/trunk/mwEmbed">Code</a></li>
+			<li><a target="_blank" href="https://github.com/kaltura/mwEmbed/issues">Bug Tracker</a></li>
+			<li><a target="_blank" href="https://github.com/kaltura/mwEmbed">Code</a></li>
 		</ul>
 	</nav>
 </header>
