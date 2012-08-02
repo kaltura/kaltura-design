@@ -1,23 +1,23 @@
 <?php 
 
-require('doc_begin.html');
+require('kaltura-partials/doc_begin.html');
 
-	require('header.html');
+	require('kaltura-partials/header.html');
 	
-	require('content_begin.html');
+	require('kaltura-partials/content_begin.html');
         
-                require('sidebar_begin.html');
+                require('kaltura-partials/sidebar_begin.html');
 	
-		        require('sidebar_example.html');
+		        require('kaltura-partials/sidebar_example.html');
         
-                require('sidebar_end.html');
+                require('kaltura-partials/sidebar_end.html');
 	
-	        require('content_example.html');
+	        require('kaltura-partials/content_example.html');
 	
-        require('content_end.html');
+        require('kaltura-partials/content_end.html');
 
-	require('footer.html');
+	require('kaltura-partials/footer.html');
 
-require('doc_end.html');
+require('kaltura-partials/doc_end.html');
 
 ?>
