@@ -8,10 +8,11 @@
 					<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
 				<h2>Check out this H2</h2>
 				<div class="clear">&nbsp;</div>
+				<i class="icon-cog"></i> Settings</a>
 				<div class="grid_1">
 					<p>I'm going to try out a video embed here:</p>
 				</div>
-				<div id="videoContainer" class="span8">
+				<div id="videoContainer" class="pull-left">
 				</div>
 				<div class="clear">&nbsp;</div>
 				<p>Maecenas mi eros, varius eu sollicitudin id, pharetra in mauris. Ut blandit metus a dolor malesuada at euismod felis dictum. Phasellus mollis consectetur diam vel gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis eu lacinia orci. Nulla adipiscing fermentum magna vitae varius. Pellentesque eu nisi at ligula fringilla consequat ut eget lorem. Cras porta convallis arcu, eleifend condimentum nibh imperdiet ac. Aenean venenatis tellus nec odio egestas elementum. Nunc accumsan convallis risus sed tempor. Duis eu tellus eget diam dapibus ullamcorper ultricies sit amet magna. Mauris rutrum ultricies leo at commodo. Nam eu quam vel neque congue malesuada vitae ac velit. Nulla felis sem, dapibus at ultrices sit amet, fermentum sit amet sapien. Vivamus vel ligula id nisl feugiat rutrum nec non risus. Donec et imperdiet sem. Integer urna velit, ullamcorper eget sagittis eget, euismod eu diam. Maecenas laoreet gravida ante non porttitor.</p>
@@ -22,7 +23,7 @@
 				<h6>This is an H6</h6>
 
 				<h1>Here is a Form</h1>
-				<form action="#" method="post" class="kaltura-box grid_2">
+				<form action="#" method="post" class="well">
 					<div>
 						 <label for="name">Text Input:</label>
 						 <input type="text" name="name" id="name" value="" tabindex="1" />
@@ -30,8 +31,14 @@
 					<div>
 						<div class="clear"></div>
 						<span>
-							<input type="text" name="search" id="name" class="kaltura-search" value="Search Input" tabindex="1" />
-							<input type="button" value="&nbsp;" class="kaltura-search" />
+							<div class="input-prepend">
+								<span class="add-on"><i class="icon-envelope"></i></span>
+								<input class="span2" type="text" placeholder="Email address">
+							</div>
+							<div class="input-append">
+								<span class="add-on"><i class="icon-key"></i></span>
+								<input class="span2" type="password" placeholder="Password">
+							</div>
 						</span>
 						<div class="clear"></div>
 					</div>
@@ -61,35 +68,39 @@
 					</div>
 					
 					<div>
-						<label for="checkbox">Checkbox:</label>
-						<input type="checkbox" name="checkbox" id="checkbox" />
+						<label class="checkbox" for="checkbox">Checkbox:
+							<input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+						</label>
 					</div>
 
 					<div>
-						<input type="button" value="Button" />
-						<input type="submit" value="Submit" />
+						<input class="btn btn-primary" type="button" value="Button" />
+						<input class="btn btn-success" type="submit" value="Submit" />
 					</div>
 				</form>
 				<div class="clear"></div>
 				<h1>Buttons</h1>
 				<form action="#">
 					<div>
-						<input type="button" value="Button 1" />
+						<a class="btn" href="#">Button 1</a>
 					</div>
 					<div>
-						<input type="button" class="kaltura-button2" value="Button 2" />
+						<a class="btn btn-info" href="#">Button 2</a>
 					</div>
 				</form>
 
 
+				<div class="clearfix">&nbsp;</div>
 				<h1>Grid Columns</h1>
-				<div class="grid_1">
+				<div class="row-fluid">
+				<div class="span4">
 					<p>Here are three colums,  I have selected a 960.gs with three colums and no margins or padding.  This makes positioning elements super simple, but makes text hard to read. so I added the following css to help the paragraphs out:</p>
 				</div>
-				<div class="grid_1">
+				<div class="span4">
 					<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
 					<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
 				</div>
-				<div class="grid_1">
+				<div class="span4">
 					<p>Donec tristique, purus ac tristique sodales, nunc metus consequat velit, id rutrum metus sapien non eros. Curabitur nisi est, lobortis vel scelerisque sed, pellentesque ac enim. Nullam quam felis, porttitor non eleifend vel, pharetra tristique risus. Maecenas id est vitae eros mollis volutpat. Ut sagittis urna ultricies dolor eleifend lacinia. Sed purus dui, interdum vitae tempor eu, porta sit amet tellus. Nulla volutpat rhoncus odio, quis volutpat ligula mattis vel. Donec iaculis elit sed lectus ornare scelerisque tincidunt augue blandit. Curabitur in justo lorem, non facilisis magna. Sed rhoncus lacinia orci a euismod.</p>
+				</div>
 				</div>

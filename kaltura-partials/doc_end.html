@@ -9,5 +9,81 @@
 				'entry_id' : '0_uka1msg4',
 			});
 		</script>
+<script>
+$('#sharrre-this-page').sharrre({
+  share: {
+    googlePlus: true,
+    facebook: true,
+    twitter: true,
+    linkedin: true
+  },
+  buttons: {
+    googlePlus: {size: 'tall'},
+    facebook: {layout: 'box_count'},
+    twitter: {count: 'vertical', via: 'Kaltura'},
+    linkedin: {counter: 'top'}
+  },
+  url: document.location.href,
+  text: document.title + " " + document.location.href,
+  urlCurl: 'kaltura-libs/bootstrap/vendor/Sharrre/sharrre.php',
+  hover: function(api, options){
+    $(api.element).find('.buttons').show();
+  },
+  hide: function(api, options){
+    $(api.element).find('.buttons').hide();
+  },
+  enableTracking: true
+});
+</script>
+<style type="text/css">
+.sharrre .box{
+  float:left;
+  margin-right: 1em;
+}
+.sharrre .count {
+  color:#444444;
+  display:block;
+  font-size:17px;
+  line-height:34px;
+  height:34px;
+  padding:4px 0;
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+  width:50px;
+  background-color:#eee;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px; 
+}
+.sharrre .share {
+  color:#FFFFFF;
+  display:block;
+  font-size:11px;
+  height:16px;
+  line-height:16px;
+  margin-top:3px;
+  padding:0;
+  text-align:center;
+  text-decoration:none;
+  width:50px;
+  background-color:#9CCE39;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px; 
+}
+.sharrre .buttons {
+  display:none;
+  position:absolute;
+  margin-left:50px;
+  z-index:10;
+  background-color:#fff;
+}
+.sharrre .button {
+  float:left;
+  max-width:50px;
+  margin-left:10px;
+}
+</style>
 	</body>
 </html>
